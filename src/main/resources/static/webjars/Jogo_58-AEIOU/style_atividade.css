@@ -1,0 +1,120 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+    /* overflow-x: hidden; */       /* Bloqueia a barra de rolagem (Scroll horizontal) */
+    /* overflow-y: hidden; */          /* Bloqueia a barra de rolagem (Scroll vertical) */
+                                    /* Pode coloar auto, em vez de hidden */
+}
+
+.image{
+    position: absolute;
+}
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 70px;
+    height: 62px;
+    background-size: cover;
+}
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+#img1{   
+    top: 50px;
+    left: 20px;
+    cursor: pointer;
+}
+#img2{
+    top: 270px;
+    left: 110px;
+    cursor: pointer;
+}
+#img3{
+    top: 490px;
+    left: 20px;
+    cursor: pointer;
+}
+#img4{
+    top: 50px;
+    left: 210px;
+    cursor: pointer;
+}
+/*#img5{
+    top: 270px;
+    left: 210px;
+    cursor: pointer;
+}*/
+#img5{
+    top: 490px;
+    left: 210px;
+    cursor: pointer;
+}
+
+#target1{
+    top: 44px;
+    left: 649px;
+    z-index: 0;
+}
+
+#target2{
+    top: 170px;
+    left: 649px;
+    z-index: 0;
+}
+
+#target3{
+    top: 296px;
+    left: 649px;
+    z-index: 0;
+}
+#target4{
+    top: 422px;
+    left: 649px;
+    z-index: 0;
+}
+/*#target5{
+    top: 270px;
+    left: 620px;
+    z-index: 0;
+}*/
+#target5{
+    top: 548px;
+    left: 649px;
+    z-index: 0;
+}
+#fundo{
+    top: 10px;
+    left: 400px;
+    z-index: -2;
+}

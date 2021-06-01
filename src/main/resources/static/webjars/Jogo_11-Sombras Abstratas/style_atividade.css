@@ -1,0 +1,89 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+    /* overflow-x: hidden; */       /* Bloqueia a barra de rolagem (Scroll horizontal) */
+    /* overflow-y: hidden; */          /* Bloqueia a barra de rolagem (Scroll vertical) */
+                                    /* Pode coloar auto, em vez de hidden */
+}
+
+.image{
+    position: absolute;
+}
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 92px;
+    height: 82px;
+}
+
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    
+    overflow: hidden;
+    
+}
+
+#img1{
+    top: 40px;
+    left: 50px;
+    cursor: pointer; 
+}
+
+#img2{
+    top: 270px;
+    left: 50px;
+    cursor: pointer;
+}
+
+#img3{
+    top: 501px;
+    left: 50px;
+    cursor: pointer;
+}
+
+#target1{
+    top: 501px;
+    left: 590px;
+    z-index: 0;
+}
+
+#target2{
+    top: 40px;
+    left: 590px;
+    z-index: 0;
+}
+
+#target3{
+    top: 270px;
+    left: 590px;
+    z-index: 0;
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}

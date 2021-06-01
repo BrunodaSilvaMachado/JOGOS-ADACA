@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:fragment="header-css">
+        <!-- this is header-css -->
+        <link href="../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+
+        <link href="../../css/main.css" rel="stylesheet" th:href="@{/css/main.css}"/>
+    </div>
+</head>
+<body>
+<div th:fragment="header">
+    <!-- this is header -->
+    <nav class="navbar navbar-light" style="background-color:#498dff;">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="color:#FFFFFF" th:href="@{/Jogos/painel}">ADACA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a style="color:#DDDDDD" th:href="@{/Jogos/painel}">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+</body>
+</html>

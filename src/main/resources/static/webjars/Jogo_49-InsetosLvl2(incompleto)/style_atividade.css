@@ -1,0 +1,223 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+}
+
+.image{
+    position: absolute;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    
+    
+}
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 82px;
+    height: 92px;
+}
+
+#img1{
+    top: 100px;
+    left: 10px;
+    z-index: -2; 
+}
+
+#img2{
+    top: 100px;
+    left: 145px;
+    z-index: -2; 
+}
+
+#img3{
+    top: 100px;
+    left: 280px;
+    z-index: -2; 
+}
+
+#img4{
+    top: 100px;
+    left: 415px;
+    z-index: -2; 
+}
+
+#img5{
+    top: 100px;
+    left: 550px;
+    z-index: -2; 
+}
+
+#img6{
+    top: 100px;
+    left: 685px;
+    z-index: -2; 
+}
+
+#img7{
+    top: 250px;
+    left: 10px;
+    z-index: -2; 
+}
+
+#img8{
+    top: 250px;
+    left: 145px;
+    z-index: -2; 
+}
+
+#img9{
+    top: 250px;
+    left: 280px;
+    z-index: -2; 
+}
+
+#img10{
+    top: 250px;
+    left: 415px;
+    z-index: -2; 
+}
+
+#img11{
+    top: 250px;
+    left: 550px;
+    z-index: -2; 
+}
+
+#img12{
+    top: 250px;
+    left: 685px;
+    z-index: -2; 
+}
+
+#img13{
+    top: 500px;
+    left: 200px;
+    z-index: 0; 
+}
+
+#img14{
+    top: 500px;
+    left: 350px;
+    z-index: 0; 
+}
+
+#img15{
+    top: 500px;
+    left: 500px;
+    z-index: 0; 
+}
+
+#img16{
+    top: 500px;
+    left: 200px;
+    cursor: pointer;
+}
+
+#img17{
+    top: 500px;
+    left: 350px;
+    cursor: pointer;
+}
+
+#img18{
+    top: 500px;
+    left: 500px;
+    cursor: pointer; 
+}
+
+#img19{
+    top: 100px;
+    left: 685px;
+    z-index: 0;
+}
+
+#img20{
+    top: 250px;
+    left: 145px;
+    z-index: 0;
+}
+
+#img21{
+    top: 250px;
+    left: 415px;
+    z-index: 0;
+}
+
+#img22{
+    top: 250px;
+    left: 550px;
+    z-index: 0;
+}
+
+#img23{
+    top: 250px;
+    left: 685px;
+    z-index: 0;
+}
+
+#target1{    
+    top: 100px;
+    left: 685px;
+    z-index: 0;
+}
+
+#target2{    
+    top: 250px;
+    left: 145px;
+    z-index: 0;
+}
+
+#target3{    
+    top: 250px;
+    left: 415px;
+    z-index: 0;
+}
+
+#target4{
+    top: 250px;
+    left: 550px;
+    z-index: 0;
+}
+
+#target5{
+    top: 250px;
+    left: 685px;
+    z-index: 0;
+}
+
+#fundo{
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+#parabens{
+    top: 240px;
+    left: 50px;
+}

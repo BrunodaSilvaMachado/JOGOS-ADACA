@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta name="_ctx" th:content="${#httpServletRequest.getContextPath()}">
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <link href="../../static/webjars/Jogo_33-Passarinhos/style_atividade.css" rel='stylesheet' th:href="@{/webjars/Jogo_33-Passarinhos/style_atividade.css}"
+          type="text/css">
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+    <script src="../../static/js/jquery-ui/jquery-ui.min.js" th:src="@{/js/jquery-ui/jquery-ui.min.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/jquery.ui.touch-punch.min.js" th:src="@{/js/jquery.ui.touch-punch.min.js}"
+            type="text/javascript"></script>
+
+    <script src="../../static/js/adacaWebApi/audioController.js" th:src="@{/js/adacaWebApi/audioController.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/adacaWebApi/saveController.js" th:src="@{/js/adacaWebApi/saveController.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/adacaWebApi/goBack.js" th:src="@{/js/adacaWebApi/goBack.js}"
+            type="text/javascript"></script>
+    <script src="../../static/webjars/Jogo_33-Passarinhos/js.js" th:src="@{/webjars/Jogo_33-Passarinhos/js.js}"
+            type="text/javascript"></script>
+    <!--script src="http://code.jquery.com/jquery-1.11.0.min.js"></script-->
+
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=0.75, maximum-scale=0.75"/>
+
+</head>
+<body id="budy">
+<div id='container'>
+    <div class='dica' id='dica'></div>
+
+    <div class='image' id="parabens">
+        <img id="resizableP" src="../../static/img/img/parabens.png" th:src="@{/img/img/parabens.png}">
+    </div>
+
+    <div class='estrela' id="estrela1">
+        <img id="resizableP" src="../../static/img/Estrela/estrela1.png" th:src="@{/img/Estrela/estrela1.png}">
+    </div>
+
+    <div class='estrela' id="estrela2">
+        <img id="resizableP" src="../../static/img/Estrela/estrela2.png" th:src="@{/img/Estrela/estrela2.png}">
+    </div>
+
+    <div class='estrela' id="estrela3">
+        <img id="resizableP" src="../../static/img/Estrela/estrela3.png" th:src="@{/img/Estrela/estrela3.png}">
+    </div>
+
+    <div class='estrela' id="estrela4">
+        <img id="resizableP" src="../../static/img/Estrela/estrela4.png" th:src="@{/img/Estrela/estrela4.png}">
+    </div>
+
+    <div class='estrela' id="estrela5">
+        <img id="resizableP" src="../../static/img/Estrela/estrela5.png" th:src="@{/img/Estrela/estrela5.png}">
+    </div>
+
+    <div class='estrela' id="estrela6">
+        <img id="resizableP" src="../../static/img/Estrela/estrela6.png" th:src="@{/img/Estrela/estrela6.png}">
+    </div>
+
+    <div class='estrela' id="estrela7">
+        <img id="resizableP" src="../../static/img/Estrela/estrela7.png" th:src="@{/img/Estrela/estrela7.png}">
+    </div>
+
+    <div class='estrela' id="estrela8">
+        <img id="resizableP" src="../../static/img/Estrela/estrela8.png" th:src="@{/img/Estrela/estrela8.png}">
+    </div>
+
+    <div class='estrela' id="estrela9">
+        <img id="resizableP" src="../../static/img/Estrela/estrela9.png" th:src="@{/img/Estrela/estrela9.png}">
+    </div>
+
+    <div class='estrela' id="estrela10">
+        <img id="resizableP" src="../../static/img/Estrela/estrela10.png" th:src="@{/img/Estrela/estrela10.png}">
+    </div>
+
+    <div class='estrela' id="estrela11">
+        <img id="resizableP" src="../../static/img/Estrela/estrela11.png" th:src="@{/img/Estrela/estrela11.png}">
+    </div>
+
+    <div class='estrela' id="estrela12">
+        <img id="resizableP" src="../../static/img/Estrela/estrela12.png" th:src="@{/img/Estrela/estrela12.png}">
+    </div>
+
+    <div class='fogos' id="fogos1">
+        <img id="resizableP" src="../../static/img/Fogos/fogos1.png" th:src="@{/img/Fogos/fogos1.png}">
+    </div>
+
+    <div class='fogos' id="fogos2">
+        <img id="resizableP" src="../../static/img/Fogos/fogos2.png" th:src="@{/img/Fogos/fogos2.png}">
+    </div>
+
+    <div class='fogos' id="fogos3">
+        <img id="resizableP" src="../../static/img/Fogos/fogos3.png" th:src="@{/img/Fogos/fogos3.png}">
+    </div>
+
+    <div class='fogos' id="fogos4">
+        <img id="resizableP" src="../../static/img/Fogos/fogos4.png" th:src="@{/img/Fogos/fogos4.png}">
+    </div>
+
+    <div class='fogos' id="fogos5">
+        <img id="resizableP" src="../../static/img/Fogos/fogos5.png" th:src="@{/img/Fogos/fogos5.png}">
+    </div>
+
+    <div class='fogos' id="fogos6">
+        <img id="resizableP" src="../../static/img/Fogos/fogos6.png" th:src="@{/img/Fogos/fogos6.png}">
+    </div>
+
+    <div class='fogos' id="fogos7">
+        <img id="resizableP" src="../../static/img/Fogos/fogos7.png" th:src="@{/img/Fogos/fogos7.png}">
+    </div>
+
+    <div class='fogos' id="fogos8">
+        <img id="resizableP" src="../../static/img/Fogos/fogos8.png" th:src="@{/img/Fogos/fogos8.png}">
+    </div>
+
+    <div class='image' id="img1">
+        <img id="resizable1" src="../../static/webjars/Jogo_33-Passarinhos/pass1.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/pass1.png}">
+    </div>
+
+    <div class='image' id="img2">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/arv2.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/arv2.png}">
+    </div>
+
+    <div class='image' id="img3">
+        <img id="resizable3" src="../../static/webjars/Jogo_33-Passarinhos/pass2.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/pass2.png}">
+    </div>
+
+    <div class='image' id="img4">
+        <img id="resizable1" src="../../static/webjars/Jogo_33-Passarinhos/arv3.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/arv3.png}">
+    </div>
+
+    <div class='image' id="img5">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/pass3.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/pass3.png}">
+    </div>
+
+    <div class='image' id="img6">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/arv4.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/arv4.png}">
+    </div>
+
+    <div class='image' id="img7">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/arvore.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/arvore.png}">
+    </div>
+
+    <div class='image' id="img8">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/passaro.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/passaro.png}">
+    </div>
+
+    <!--div id="target1" class='image'>
+        <id="resizable_t1">
+    </div>
+
+    <div id="target2" class='image'>
+        <id="resizable_t2">
+    </div>
+
+    <div id="target3" class='image'>
+        <id="resizable_t2">
+    </div>
+
+    <div id="target4" class='image'>
+        <id="resizable_t2">
+    </div>
+
+    <div id="target5" class='image'>
+        <id="resizable_t2">
+    </div>
+
+    <div id="target6" class='image'>
+        <id="resizable_t2">
+    </div-->
+
+    <div class='image' id="fundo1">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/faixa.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/faixa.png}">
+    </div>
+
+    <div class='image' id="fundo2">
+        <img id="resizable2" src="../../static/webjars/Jogo_33-Passarinhos/faixa.png"
+             th:src="@{/webjars/Jogo_33-Passarinhos/faixa.png}">
+    </div>
+
+
+    <!--div id="dicaPisca1" class='image'>
+        <img src="abelha.png">
+    </div>
+
+    <div id="dicaPisca2" class='image'>
+        <img src="joaninha.png">
+    </div-->
+
+
+</div>
+</div>
+
+
+</body>
+</html>

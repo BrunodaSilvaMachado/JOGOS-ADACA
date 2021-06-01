@@ -1,0 +1,392 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+    /* overflow-x: hidden; */       /* Bloqueia a barra de rolagem (Scroll horizontal) */
+    /* overflow-y: hidden; */          /* Bloqueia a barra de rolagem (Scroll vertical) */
+                                    /* Pode coloar auto, em vez de hidden */
+}
+
+.image{
+    position: absolute;
+}
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 70px;
+    height: 62px;
+    background-size: cover;
+}
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+.hover{
+    /*opacity: 0.3;*/
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
+    /*z-index: 0;*/
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    
+    overflow: hidden;
+    
+}
+#img1{
+    cursor: pointer;
+}
+#img2{
+    cursor: pointer;
+}
+#img3{
+    cursor: pointer;
+}
+#img4{
+    cursor: pointer;
+}
+#img5{
+    cursor: pointer;
+}
+#img6{
+    cursor: pointer;
+}
+#img7{
+    cursor: pointer;
+}
+#img8{
+    cursor: pointer;
+}
+#img9{
+    cursor: pointer;
+}
+#img10{
+    cursor: pointer;
+}
+#img11{
+    cursor: pointer;
+}
+#img12{
+    cursor: pointer;
+}
+#img13{
+    cursor: pointer;
+}
+#img14{
+    cursor: pointer;
+}
+#img15{
+    cursor: pointer;
+}
+#img16{
+    cursor: pointer;
+}
+#img17{
+    cursor: pointer;
+}
+#img18{
+    cursor: pointer;
+}
+#img19{
+    cursor: pointer;
+}
+#img20{
+    cursor: pointer;
+}
+#img21{
+    cursor: pointer;
+}
+#img22{
+    cursor: pointer;
+}
+#img23{
+    cursor: pointer;
+}
+#img24{
+    cursor: pointer;
+}
+#img25{
+    cursor: pointer;
+}
+#img26{
+    cursor: pointer;
+}
+#img27{
+    cursor: pointer;
+}
+#img28{
+    cursor: pointer;
+}
+#img29{
+    cursor: pointer;
+}
+#img30{
+    cursor: pointer;
+}
+#img31{
+    cursor: pointer;
+}
+#img32{
+    cursor: pointer;
+}
+#img33{
+    cursor: pointer;
+}
+#img34{
+    cursor: pointer;
+}
+#img35{
+    cursor: pointer;
+}
+#img36{
+    cursor: pointer;
+}
+#img37{
+    cursor: pointer;
+}
+#img38{
+    cursor: pointer;
+}
+#img39{
+    cursor: pointer;
+}
+
+#target1{
+    top: 65px;
+    left: 230px;
+    z-index: 0;
+}
+
+#target2{
+    top: 65px;
+    left: 320px;
+    z-index: 0;
+}
+
+#target3{
+    top: 65px;
+    left: 410px;
+    z-index: 0;
+}
+#target4{
+    top: 65px;
+    left: 500px;
+    z-index: 0;
+}
+#target5{
+    top: 65px;
+    left: 590px;
+    z-index: 0;
+}
+#target6{
+    top: 65px;
+    left: 680px;
+    z-index: 0;
+}
+#target7{
+    top: 171px;
+    left: 270px;
+    z-index: 0;
+}
+#target8{
+    top: 171px;
+    left: 360px;
+    z-index: 0;
+}
+#target9{
+    top: 171px;
+    left: 450px;
+    z-index: 0;
+}
+#target10{
+    top: 171px;
+    left: 540px;
+    z-index: 0;
+}
+#target11{
+    top: 171px;
+    left: 630px;
+    z-index: 0;
+}
+
+#target12{
+    top: 277px;
+    left: 230px;
+    z-index: 0;
+}
+
+#target13{
+    top: 277px;
+    left: 320px;
+    z-index: 0;
+}
+#target14{
+    top: 277px;
+    left: 410px;
+    z-index: 0;
+}
+#target15{
+    top: 277px;
+    left: 500px;
+    z-index: 0;
+}
+#target16{
+    top: 277px;
+    left: 590px;
+    z-index: 0;
+}
+#target17{
+    top: 277px;
+    left: 680px;
+    z-index: 0;
+}
+#target18{
+    top: 383px;
+    left: 270px;
+    z-index: 0;
+}
+#target19{
+    top: 383px;
+    left: 360px;
+    z-index: 0;
+}
+#target20{
+    top: 383px;
+    left: 450px;
+    z-index: 0; 
+}
+#target21{
+    top: 383px;
+    left: 540px;
+    z-index: 0;
+}
+
+#target22{
+    top: 383px;
+    left: 630px;
+    z-index: 0;
+}
+
+#target23{
+    top: 489px;
+    left: 230px;
+    z-index: 0;
+}
+#target24{
+    top: 489px;
+    left: 320px;
+    z-index: 0;
+}
+#target25{
+    top: 489px;
+    left: 410px;
+    z-index: 0;
+}
+#target26{
+    top: 489px;
+    left: 500px;
+    z-index: 0;
+}
+#target27{
+    top: 489px;
+    left: 590px;
+    z-index: 0;
+}
+#target28{
+    top: 489px;
+    left: 680px;
+    z-index: 0;
+}
+#target29{
+    top: 595px;
+    left: 270px;
+    z-index: 0;
+}
+#target30{
+    top: 595px;
+    left: 360px;
+    z-index: 0;
+}
+#target31{
+    top: 595px;
+    left: 450px;
+    z-index: 0;
+}
+
+#target32{
+    top: 595px;
+    left: 540px;
+    z-index: 0;
+}
+
+#target33{
+    top: 595px;
+    left: 630px;
+    z-index: 0;
+}
+#target34{
+    top: 595px;
+    left: 180px;
+    z-index: 0;
+}
+#target35{
+    top: 171px;
+    left: 180px;
+    z-index: 0;
+}
+#target36{
+    top: 171px;
+    left: 720px;
+    z-index: 0;
+}
+#target37{
+    top: 383px;
+    left: 720px;
+    z-index: 0; 
+}
+#target38{
+    top: 595px;
+    left: 720px;
+    z-index: 0;
+}
+#target39{
+    top: 383px;
+    left: 180px;
+    z-index: 0;
+}
+#fundo1{
+    top: 50px;
+    left: 40px;
+    z-index: -3;
+}
+#fundo2{
+    top: 50px;
+    left: 170px;
+    z-index: -3;
+}

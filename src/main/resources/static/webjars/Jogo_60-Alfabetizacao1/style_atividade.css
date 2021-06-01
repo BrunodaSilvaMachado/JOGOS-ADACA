@@ -1,0 +1,189 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+}
+
+.image{
+    position: absolute;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 92px;
+    height: 82px;
+}
+
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+.animal{
+    position: absolute;
+    top: 185px;
+    left: 460px;
+}
+
+.alfabeto{
+    position: absolute;
+    cursor: pointer;
+}
+
+.linha{
+    position: absolute;
+}
+
+/*
+#P{
+    top: 200px;
+    left: 10px;
+    z-index: 0;
+}
+
+#A{
+    top: 200px;
+    left: 120px;
+    z-index: 0;
+}
+
+#T{
+    top: 200px;
+    left: 230px;
+    z-index: 0;
+}
+
+#O{
+    top: 200px;
+    left: 340px;
+    z-index: 0;
+}
+
+#G{
+    top: 400px;
+    left: 10px;
+    z-index: 0;
+}
+
+#F{
+    top: 400px;
+    left: 120px;
+    z-index: 0;
+}
+
+#C{
+    top: 400px;
+    left: 230px;
+    z-index: 0;
+}
+
+#S    {
+    top: 400px;
+    left: 340px;
+    z-index: 0;
+}
+*/
+
+#linha1{
+    top: 300px;
+    left: 10px;
+    z-index: 0;
+}
+
+#linha2{
+    top: 300px;
+    left: 120px;
+    z-index: 0;
+}
+
+#linha3{
+    top: 300px;
+    left: 230px;
+    z-index: 0;
+}
+
+#linha4{
+    top: 300px;
+    left: 340px;
+    z-index: 0;
+}
+
+#target1{    
+    top: 200px;
+    left: 10px;
+    z-index: 0;
+}
+
+#target2{
+    top: 200px;
+    left: 120px;
+    z-index: 0;
+}
+
+
+#target3{
+    top: 200px;
+    left: 230px;
+    z-index: 0;
+}
+
+#target4{
+    top: 200px;
+    left: 340px;
+    z-index: 0;
+}
+
+#target5{    
+    top: 1000px;
+    left: 10px;
+    z-index: 0;
+}
+
+#target6{
+    top: 1000px;
+    left: 120px;
+    z-index: 0;
+}
+
+
+#target7{
+    top: 1000px;
+    left: 230px;
+    z-index: 0;
+}
+
+#target8{
+    top: 1000px;
+    left: 340px;
+    z-index: 0;
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}

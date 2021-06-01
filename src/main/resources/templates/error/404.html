@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>404 - Page not found</h1>
+        <div th:inline="text">Hello '[[${#httpServletRequest.remoteUser}]]', The request could not be found. <br>
+            Exception: '[[${#httpServletRequest.getAttribute("javax.servlet.error.exception")}]]' <br>
+            ServletName: '[[${#httpServletRequest.getAttribute("javax.servlet.error.servlet_name")}]]' <br>
+            RequestUri: '[[${#httpServletRequest.getAttribute("javax.servlet.error.request_uri")}]]' <br>
+
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>

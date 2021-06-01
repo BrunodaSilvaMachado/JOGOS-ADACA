@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width" name="viewport"/>
+    <title>Menu</title>
+    <div th:replace="fragments/header :: header-css"/>
+    <link href="../../static/css/styleMenu.css" rel="stylesheet" th:href="@{/css/styleMenu.css}" type="text/css">
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+    <script src="../../static/js/MenuMobi.js" th:src="@{/js/MenuMobi.js}" type="text/javascript"></script>
+</head>
+<body data-title="menu" onload="configButton()">
+
+<div th:replace="fragments/header :: header"/>
+<div id="frame">
+    <button id="botao1" onclick="mudaJogo('Jogo_1-Formas Sombras')" title="Formas Sombras" type="button"></button>
+    <button id="botao2" onclick="mudaJogo('Jogo_2-Formas Coloridas')" title="Formas Coloridas" type="button"></button>
+    <button id="botao3" onclick="mudaJogo('Jogo_3-Formas Azuis')" title="Formas Azuis" type="button"></button>
+    <button id="botao4" onclick="mudaJogo('Jogo_4-Turma da Monica2')" title="Turma da Monica2" type="button"></button>
+    <button id="botao5" onclick="mudaJogo('Jogo_5-Bolas')" title="Bolas" type="button"></button>
+    <button id="botao6" onclick="mudaJogo('Jogo_6-Sorvete')" title="Sorvete" type="button"></button>
+    <button id="botao7" onclick="mudaJogo('Jogo_7-Pirulito')" title="Pirulito" type="button"></button>
+    <button id="botao8" onclick="mudaJogo('Jogo_8-Carrinho')" title="Carrinho" type="button"></button>
+    <button id="botao9" onclick="mudaJogo('Jogo_9-Caminhaozinho')" title="Caminhaozinho" type="button"></button>
+    <button id="botao10" onclick="mudaJogo('Jogo_10-Castelinho')" title="Castelinho" type="button"></button>
+    <button id="botao11" onclick="mudaJogo('Jogo_11-Sombras Abstratas')" title="Sombras Abstratas"
+            type="button"></button>
+    <button id="botao12" onclick="mudaJogo('Jogo_12-Arvores')" title="Arvores" type="button"></button>
+    <button id="botao13" onclick="mudaJogo('Jogo_13-Caixas')" title="Caixas" type="button"></button>
+    <button id="botao14" onclick="mudaJogo('Jogo_14-Frutas 1')" title="Frutas 1" type="button"></button>
+    <button id="botao15" onclick="mudaJogo('Jogo_15-Frutas 2')" title="Frutas 2" type="button"></button>
+    <button id="botao16" onclick="mudaJogo('Jogo_16-Flor')" title="Flor" type="button"></button>
+    <button id="botao17" onclick="mudaJogo('Jogo_17-Turma da Monica')" title="Turma da Monica" type="button"></button>
+    <button id="botao18" onclick="mudaJogo('Jogo_18-ABC')" title="ABC" type="button"></button>
+    <button id="botao19" onclick="mudaJogo('Jogo_19-EFG')" title="EFG" type="button"></button>
+    <button id="botao20" onclick="mudaJogo('Jogo_20-123')" title="123" type="button"></button>
+    <button id="botao21" onclick="mudaJogo('Jogo_21-456')" title="456" type="button"></button>
+    <button id="botao22" onclick="mudaJogo('Jogo_22-789')" title="789" type="button"></button>
+    <button id="botao23" onclick="mudaJogo('Jogo_23-Peixinho')" title="Peixinho" type="button"></button>
+    <button id="botao24" onclick="mudaJogo('Jogo_24-Bob Esponja')" title="Bob Esponja" type="button"></button>
+    <button id="botao25" onclick="mudaJogo('Jogo_25-Labirinto')" title="Labirinto" type="button"></button>
+    <button id="botao26" onclick="mudaJogo('Jogo_26-Rosto')" title="Rosto" type="button"></button>
+    <button id="botao27" onclick="mudaJogo('Jogo_27-NumeroBolas')" title="Número Bolas" type="button"></button>
+    <button id="botao28" onclick="mudaJogo('Jogo_28-BolaColorida')" title="Bola Colorida" type="button"></button>
+    <button id="botao29" onclick="mudaJogo('Jogo_29-MateriaisEscolares')" title="MateriaisEscolares"
+            type="button"></button>
+    <button id="botao30" onclick="mudaJogo('Jogo_30-Utensilios')" title="Utensílios" type="button"></button>
+    <button id="botao31" onclick="mudaJogo('Jogo_31-Insetos')" title="Insetos" type="button"></button>
+    <button id="botao32" onclick="mudaJogo('Jogo_32-Passaro')" title="Passaro" type="button"></button>
+    <button id="botao33" onclick="mudaJogo('Jogo_33-Passarinhos')" title="Passarinhos" type="button"></button>
+    <button id="botao34" onclick="mudaJogo('Jogo_34-Trenzinho')" title="Trenzinho" type="button"></button>
+    <button id="botao35" onclick="mudaJogo('Jogo_35-BotoesColoridos')" title="Botões Coloridos" type="button"></button>
+    <button id="botao36" onclick="mudaJogo('Jogo_36-FormasSombras2')" title="Formas Sombras 2" type="button"></button>
+    <button id="botao37" onclick="mudaJogo('Jogo_37-SorveteSequencial')" title="Sorvete Sequencial"
+            type="button"></button>
+    <button id="botao38" onclick="mudaJogo('Jogo_38-BotoesNumeros')" title="Botões Números" type="button"></button>
+    <button id="botao39" onclick="mudaJogo('Jogo_39-BotoesLetras')" title="Botões Letras" type="button"></button>
+    <button id="botao40" onclick="mudaJogo('JogoBonus-Lince')" title="Lince" type="button"></button>
+    <button id="botao41" onclick="mudaJogo('Jogo_41-VariasFormas')" title="Várias Formas" type="button"></button>
+    <button id="botao42" onclick="mudaJogo('Jogo_42-VariasFrutas')" title="Várias Frutas" type="button"></button>
+    <button id="botao43" onclick="mudaJogo('Jogo_43-SorteveSemNumero')" title="Sorvete (Sem Números)"
+            type="button"></button>
+    <!--button id="botao44" title="44" type="button" onclick="mudaJogo('Jogo_44')"></button-->
+    <button id="botao45" onclick="mudaJogo('Jogo_45-PeixinhoSequencial')" title="Peixinho Sequencial"
+            type="button"></button>
+    <button id="botao46" onclick="mudaJogo('Jogo_46-VariasFormasSombras')" title="Várias Formas Sombras"
+            type="button"></button>
+    <button id="botao47" onclick="mudaJogo('Jogo_47-IdentificarODiferente-Bola')" title="Identificar Diferente - Bola"
+            type="button"></button>
+    <!--button id="botao48" title="Bola Colorida" type="button" onclick="mudaJogo('Jogo_48-BolaColorida-Lvl2')"></button>
+    <button id="botao49" title="Insetos Lvl 2" type="button" onclick="mudaJogo('Jogo_49-InsetosLvl2')"></button-->
+    <button id="botao50" onclick="mudaJogo('Jogo_50-IdentificarODiferente-Arvore')" title="Identificar Diferente - Árvore"
+            type="button"></button>
+    <button id="botao51" onclick="mudaJogo('Jogo_51-TV')" title="TV" type="button"></button>
+    <button id="botao52" onclick="mudaJogo('Jogo_52-Colher')" title="Colher" type="button"></button>
+    <button id="botao53" onclick="mudaJogo('Jogo_53-PassaroAzul')" title="Pássaro Azul" type="button"></button>
+    <button id="botao54" onclick="mudaJogo('Jogo_54-IdentificarODiferente-Passaro')" title="Identificar Diferente - Passaro"
+            type="button"></button>
+    <button id="botao55" onclick="mudaJogo('Jogo_55-IdentificarODiferente-TdaMonica')" title="Ache o Bidu (Cachorro)"
+            type="button"></button>
+    <button id="botao56" onclick="mudaJogo('Jogo_56-Trenzinho%202')" title="Trenzinho 2" type="button"></button>
+    <button id="botao57" onclick="mudaJogo('Jogo_57-Polvo')" title="Polvo" type="button"></button>
+    <button id="botao58" onclick="mudaJogo('Jogo_58-AEIOU')" title="AEIOU" type="button"></button>
+    <button id="botao59" onclick="mudaJogo('Jogo_59-Porco')" title="Porco" type="button"></button>
+    <button id="botao60" onclick="mudaJogo('Jogo_60-Alfabetizacao1')" title="Complete a palavra" type="button"></button>
+    <button id="botao61" onclick="mudaJogo('Jogo_61-Alfabetizacao2')" title="Sílaba" type="button"></button>
+    <button id="botao62" onclick="mudaJogo('Jogo_62-Alfabetizacao3')" title="Soletrar" type="button"></button>
+    <button id="botao63" onclick="mudaJogo('Jogo_63-Alfabetizacao4')" title="Ouça e escolha" type="button"></button>
+    <button id="botao64" onclick="mudaJogo('Jogo_64-Alfabetizacao5')" title="Ouça e soletre" type="button"></button>
+
+
+    <!--button id="btconfig" title="Configuração" type="button" onclick="configButton()">Configura Botões</button>
+    button id="btconfig2" title="Configuração" type="button" onclick="habilitaJogo()">Habilita</button-->
+</div>
+<div th:replace="fragments/footer :: footer"/>
+
+<input id="campoEscondidoDicaTempo" name="campoEscondidoDicaTempo" onfocus="this.value = ''" type="hidden"/>
+<input id="campoEscondidoTempodeDica" name="campoEscondidoTempodeDica" onfocus="this.value = ''" type="hidden"/>
+<input id="campoEscondidoDicaCaminho" name="campoEscondidoDicaCaminho" onfocus="this.value = ''" type="hidden"/>
+</body>
+</html>

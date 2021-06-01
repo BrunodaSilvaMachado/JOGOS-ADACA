@@ -1,0 +1,61 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+}
+
+.image{
+    position: absolute;
+    top:100px;
+    left:50px;
+    width: 300px;
+    height: 300px;
+}
+
+#container{
+    margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+    width: 662px;
+    height: 100vh;
+    border-radius: 50px;
+    
+    /*overflow: hidden*/;
+}
+
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 92px;
+    height: 82px;
+}
+
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}
+
+.sublinhado{
+    cursor: pointer;
+    position: absolute;
+    background-image: url(traco.png);
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    font-size: 85;
+}

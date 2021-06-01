@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width" name="viewport"/>
+    <title>Cadastro de configurações</title>
+    <link href="../../static/css/styleConfig.css" rel="stylesheet" th:href="@{/css/styleConfig.css}" type="text/css">
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+    <script SRC="../../static/js/treeview.js" th:src="@{/js/treeView.js}" type="text/javascript"></script>
+</head>
+<body>
+<!-- incompleto-->
+<div th:fragment="configuracaomenu-body">
+<!--    <div class="container">-->
+        <div class="divs" id="divJogos">
+            <div class="acidjs-css3-treeview" id="divTreeView">
+                <label id="labelJogos">Seleção dos Jogos</label>
+                <ul id="treeview">
+                    <li style="margin-left: 2px; margin-top: 16px;">
+                        <input checked="checked" id="node-0" type="checkbox">
+                        <!-- é só usar checked="checked" nos inputs para manter treeview aberta onde quiser-->
+                        <label>
+                            <input type="checkbox"><span></span>
+                        </label>
+                        <label for="node-0">Todos os Jogos</label>
+                        <ul>
+                            <li>
+                                <input id="node-0-0" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-0">1) Associação Visual</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-0-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-0-0">a) Combinar formas geométricas isoladas (3 peças)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-0-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo1" type="checkbox"><span class="k-sprite jogo1"></span>
+                                                </label>
+                                                <label>Formas Sombras - Jogo 1</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-0-1" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo2" type="checkbox"><span class="k-sprite jogo2"></span>
+                                                </label>
+                                                <label>Formas Coloridas - Jogo 2</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-0-2" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo3" type="checkbox"><span class="k-sprite jogo3"></span>
+                                                </label>
+                                                <label>Formas Azuis - Jogo 3</label>
+                                                <!-- tinha um for="node-0-0-0-2" no label, se quiser a setinha apontando pra ele é só colocar. Mas vai ficar em cima do icone-->
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-0-1" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-0-1">b) Combinar Imagens (3 peças)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-0-1-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo4" type="checkbox"><span class="k-sprite jogo4"></span>
+                                                </label>
+                                                <label>Turma da Mônica2 - Jogo 4</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-1-1" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo5" type="checkbox"><span class="k-sprite jogo5"></span>
+                                                </label>
+                                                <label>Bolas - Jogo 5</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <!--basta coloca checked="checked" no input para aparecer aberto -->
+                                        <input id="node-0-0-2" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-0-2">c) Combinar formas geométricas numa imagem</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-0-2-0" type="checkbox">
+                                                <label>
+                                                    <input type="checkbox"><span></span>
+                                                </label>
+                                                <label for="node-0-0-2-0">4 peças</label>
+                                                <ul>
+                                                    <li>
+                                                        <input id="node-0-0-2-0-0" type="checkbox">
+                                                        <label>
+                                                            <input id="Jogo6" type="checkbox"><span
+                                                                class="k-sprite jogo6"></span>
+                                                        </label>
+                                                        <label>Sorvete - Jogo 6</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-2-1" type="checkbox">
+                                                <label>
+                                                    <input type="checkbox"><span></span>
+                                                </label>
+                                                <label for="node-0-0-2-1">5 peças</label>
+                                                <ul>
+                                                    <li>
+                                                        <input id="node-0-0-2-1-0" type="checkbox">
+                                                        <label>
+                                                            <input id="Jogo7" type="checkbox"><span
+                                                                class="k-sprite jogo7"></span>
+                                                        </label>
+                                                        <label>Pirulito - Jogo 7</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="node-0-0-2-1-1" type="checkbox">
+                                                        <label>
+                                                            <input id="Jogo8" type="checkbox"><span
+                                                                class="k-sprite jogo8"></span>
+                                                        </label>
+                                                        <label>Carrinho - Jogo 8</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-2-2" type="checkbox">
+                                                <label>
+                                                    <input type="checkbox"><span></span>
+                                                </label>
+                                                <label for="node-0-0-2-2">6 peças</label>
+                                                <ul>
+                                                    <li>
+                                                        <input id="node-0-0-2-2-0" type="checkbox">
+                                                        <label>
+                                                            <input id="Jogo9" type="checkbox"><span
+                                                                class="k-sprite jogo9"></span>
+                                                        </label>
+                                                        <label>Caminhaozinho - Jogo 9</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-0-2-3" type="checkbox">
+                                                <label>
+                                                    <input type="checkbox"><span></span>
+                                                </label>
+                                                <label for="node-0-0-2-3">8 peças</label>
+                                                <ul>
+                                                    <li>
+                                                        <input id="node-0-0-2-3-0" type="checkbox">
+                                                        <label>
+                                                            <input id="Jogo10" type="checkbox"><span
+                                                                class="k-sprite jogo10"></span>
+                                                        </label>
+                                                        <label>Castelinho - Jogo 10</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-0-3" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-0-3">d) Combinar imagens disformes (arranjo de 3 peças)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-0-3-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo11" type="checkbox"><span class="k-sprite jogo11"></span>
+                                                </label>
+                                                <label>Sombras Abstratas - Jogo 11</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-1" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-1">2) Noção Espacial</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-1-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-1-0">a) Combinar de acordo com o tamanho</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-1-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo12" type="checkbox"><span class="k-sprite jogo12"></span>
+                                                </label>
+                                                <label>Sombras Árvores - Jogo 12</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-1-1" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-1-1">b) Combinar de acordo com a posição espacial</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-1-1-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo13" type="checkbox"><span class="k-sprite jogo13"></span>
+                                                </label>
+                                                <label>Caixas - Jogo 13</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-2" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-2">3) Resolução Visual</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-2-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-2-0">a) Associar partes e todo (Cores diferentes)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-2-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo14" type="checkbox"><span class="k-sprite jogo14"></span>
+                                                </label>
+                                                <label>Frutas 1 - Jogo 14</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-2-1" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-2-1">b) Associar partes e todo (Cores iguais)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-2-1-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo15" type="checkbox"><span class="k-sprite jogo15"></span>
+                                                </label>
+                                                <label>Frutas 2 - Jogo 15</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-3" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-3">4) Fechamento Visual</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-3-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-3-0">a) Completar 2 partes no todo - imagem colorida</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-3-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo16" type="checkbox"><span class="k-sprite jogo16"></span>
+                                                </label>
+                                                <label>Flor - Jogo 16</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-3-1" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-3-1">b) Completar 3 partes no todo - imagem colorida</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-3-1-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo17" type="checkbox"><span class="k-sprite jogo17"></span>
+                                                </label>
+                                                <label>Turma da Mônica - Jogo 17</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-3-2" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-3-2">c) Completar 3 partes no todo - imagem preto e
+                                            branca</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-3-2-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo26" type="checkbox"><span class="k-sprite jogo26"></span>
+                                                </label>
+                                                <label>Rosto - Jogo 26</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-4" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-4">5) Reconhecimento Visual do Alfabeto</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-4-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-4-0">a) Associar letras (arranjo de 3 itens)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-4-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo18" type="checkbox"><span class="k-sprite jogo18"></span>
+                                                </label>
+                                                <label>ABC - Jogo 18</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-4-0-1" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo19" type="checkbox"><span class="k-sprite jogo19"></span>
+                                                </label>
+                                                <label>EFG - Jogo 19</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-5" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-5">6) Reconhecimento Visual dos Numerais</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-5-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-5-0">a) Associar números (arranjo de 3 itens)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-5-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo20" type="checkbox"><span class="k-sprite jogo20"></span>
+                                                </label>
+                                                <label>123 - Jogo 20</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-5-0-1" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo21" type="checkbox"><span class="k-sprite jogo21"></span>
+                                                </label>
+                                                <label>456 - Jogo 21</label>
+                                            </li>
+                                            <li>
+                                                <input id="node-0-5-0-2" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo22" type="checkbox"><span class="k-sprite jogo22"></span>
+                                                </label>
+                                                <label>789 - Jogo 22</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <input id="node-0-6" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-6">7) Ordem Numérica</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-6-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-6-0">a) Números até 5 - imagem como dica</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-6-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo23" type="checkbox"><span class="k-sprite jogo23"></span>
+                                                </label>
+                                                <label>Peixinho - Jogo 23</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Leitura e Quantidade -->
+                            <li>
+                                <input id="node-0-7" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-7">8) Leitura e Quantidade</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-7-0" type="checkbox">
+                                        <label>
+                                            <input type="checkbox"><span></span>
+                                        </label>
+                                        <label for="node-0-7-0">a) Leitura de números por extenso (arranjo de 3
+                                            itens)</label>
+                                        <ul>
+                                            <li>
+                                                <input id="node-0-7-0-0" type="checkbox">
+                                                <label>
+                                                    <input id="Jogo27" type="checkbox"><span class="k-sprite jogo27"></span>
+                                                </label>
+                                                <label>Número Bolas - Jogo 27</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Labirinto -->
+                            <!--li>
+    <input type="checkbox" id="node-0-8">
+    <label>
+    <input type="checkbox"><span></span>
+    </label>
+    <label for="node-0-8">9) Labirinto de Diversos Níveis</label>
+    <ul>
+    <li>
+    <input type="checkbox" id="node-0-8-0">
+    <label>
+    <input type="checkbox" id="Jogo25" ><span class="k-sprite jogo25"></span>
+    </label>
+    <label>Labirinto - Jogo 25</label>
+    </li>
+    </ul>
+    </li-->
+                            <!-- Sem Classificação -->
+                            <li>
+                                <input id="node-0-9" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-9">10) Jogos sem Classificação</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-9-0" type="checkbox">
+                                        <label>
+                                            <input id="Jogo24" type="checkbox"><span class="k-sprite jogo24"></span>
+                                        </label>
+                                        <label>Bob Esponja - Jogo 24</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-1" type="checkbox">
+                                        <label>
+                                            <input id="Jogo28" type="checkbox"><span class="k-sprite jogo28"></span>
+                                        </label>
+                                        <label>Bola Colorida - Jogo 28</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-2" type="checkbox">
+                                        <label>
+                                            <input id="Jogo29" type="checkbox"><span class="k-sprite jogo29"></span>
+                                        </label>
+                                        <label>Materiais Escolares - Jogo 29</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-3" type="checkbox">
+                                        <label>
+                                            <input id="Jogo30" type="checkbox"><span class="k-sprite jogo30"></span>
+                                        </label>
+                                        <label>Utensílios - Jogo 30</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-4" type="checkbox">
+                                        <label>
+                                            <input id="Jogo31" type="checkbox"><span class="k-sprite jogo31"></span>
+                                        </label>
+                                        <label>Insetos - Jogo 31</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-5" type="checkbox">
+                                        <label>
+                                            <input id="Jogo32" type="checkbox"><span class="k-sprite jogo32"></span>
+                                        </label>
+                                        <label>Pássaro - Jogo 32</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-6" type="checkbox">
+                                        <label>
+                                            <input id="Jogo33" type="checkbox"><span class="k-sprite jogo33"></span>
+                                        </label>
+                                        <label>Passarinhos - Jogo 33</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-7" type="checkbox">
+                                        <label>
+                                            <input id="Jogo34" type="checkbox"><span class="k-sprite jogo34"></span>
+                                        </label>
+                                        <label>Trenzinho - Jogo 34</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-8" type="checkbox">
+                                        <label>
+                                            <input id="Jogo35" type="checkbox"><span class="k-sprite jogo35"></span>
+                                        </label>
+                                        <label>Botões colorido - Jogo 35</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-9" type="checkbox">
+                                        <label>
+                                            <input id="Jogo36" type="checkbox"><span class="k-sprite jogo36"></span>
+                                        </label>
+                                        <label>Formas Sombras 2 - Jogo 36</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-10" type="checkbox">
+                                        <label>
+                                            <input id="Jogo37" type="checkbox"><span class="k-sprite jogo37"></span>
+                                        </label>
+                                        <label>Sorvete Sequencial - Jogo 37</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-11" type="checkbox">
+                                        <label>
+                                            <input id="Jogo38" type="checkbox"><span class="k-sprite jogo38"></span>
+                                        </label>
+                                        <label>Botões Número - Jogo 38</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-12" type="checkbox">
+                                        <label>
+                                            <input id="Jogo39" type="checkbox"><span class="k-sprite jogo39"></span>
+                                        </label>
+                                        <label>Botões Letras - Jogo 39</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="node-0-9-14" type="checkbox">
+                                        <label>
+                                            <input id="Jogo42" type="checkbox"><span class="k-sprite jogo42"></span>
+                                        </label>
+                                        <label>Várias Frutas - Jogo 42</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-15" type="checkbox">
+                                        <label>
+                                            <input id="Jogo43" type="checkbox"><span class="k-sprite jogo43"></span>
+                                        </label>
+                                        <label>Sorvete (Sem Números) - Jogo 43</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="node-0-9-17" type="checkbox">
+                                        <label>
+                                            <input id="Jogo45" type="checkbox"><span class="k-sprite jogo45"></span>
+                                        </label>
+                                        <label>Peixinho Sequencial - Jogo 45</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-18" type="checkbox">
+                                        <label>
+                                            <input id="Jogo46" type="checkbox"><span class="k-sprite jogo46"></span>
+                                        </label>
+                                        <label>Várias Formas Sombras - Jogo 46</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-19" type="checkbox">
+                                        <label>
+                                            <input id="Jogo47" type="checkbox"><span class="k-sprite jogo47"></span>
+                                        </label>
+                                        <label>Identificar Diferente (Bolas) - Jogo 47</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="node-0-9-22" type="checkbox">
+                                        <label>
+                                            <input id="Jogo50" type="checkbox"><span class="k-sprite jogo50"></span>
+                                        </label>
+                                        <label>Identificar Diferente (Árvore) - Jogo 50</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-23" type="checkbox">
+                                        <label>
+                                            <input id="Jogo51" type="checkbox"><span class="k-sprite jogo51"></span>
+                                        </label>
+                                        <label>TV - Jogo 51</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-24" type="checkbox">
+                                        <label>
+                                            <input id="Jogo52" type="checkbox"><span class="k-sprite jogo52"></span>
+                                        </label>
+                                        <label>Colher - Jogo 52</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-25" type="checkbox">
+                                        <label>
+                                            <input id="Jogo53" type="checkbox"><span class="k-sprite jogo53"></span>
+                                        </label>
+                                        <label>Pássaro Azul - Jogo 53</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-26" type="checkbox">
+                                        <label>
+                                            <input id="Jogo54" type="checkbox"><span class="k-sprite jogo54"></span>
+                                        </label>
+                                        <label>Identificar Diferente (Pássaro) - Jogo 54</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-9-29" type="checkbox">
+                                        <label>
+                                            <input id="Jogo57" type="checkbox"><span class="k-sprite jogo57"></span>
+                                        </label>
+                                        <label>Polvo - Jogo 57</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Bonus -->
+                            <li>
+                                <input id="node-0-10" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-10">11) Bônus</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-10-0" type="checkbox">
+                                        <label>
+                                            <input id="Jogo40" type="checkbox"><span class="k-sprite jogo40"></span>
+                                        </label>
+                                        <label>Lince - Jogo Bonus</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Jogos Para Serem Repetidos -->
+                            <li>
+                                <input id="node-0-11" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-11">12) Jogos Estatística</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-11-0" type="checkbox">
+                                        <label>
+                                            <input id="Jogo55" type="checkbox"><span class="k-sprite jogo55"></span>
+                                        </label>
+                                        <label>Ache o Bidu (Cachorro) - Jogo 55</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-11-1" type="checkbox">
+                                        <label>
+                                            <input id="Jogo56" type="checkbox"><span class="k-sprite jogo56"></span>
+                                        </label>
+                                        <label>Trenzinho 2 - Jogo 56</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-11-2" type="checkbox">
+                                        <label>
+                                            <input id="Jogo59" type="checkbox"><span class="k-sprite jogo59"></span>
+                                        </label>
+                                        <label>Porco - Jogo 59</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-11-3" type="checkbox">
+                                        <label>
+                                            <input id="Jogo58" type="checkbox"><span class="k-sprite jogo58"></span>
+                                        </label>
+                                        <label>AEIOU - Jogo 58</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-11-4" type="checkbox">
+                                        <label>
+                                            <input id="Jogo41" type="checkbox"><span class="k-sprite jogo41"></span>
+                                        </label>
+                                        <label>Várias Formas - Jogo 41</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Jogos Alfabetização -->
+                            <li>
+                                <input id="node-0-12" type="checkbox">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                                <label for="node-0-12">13) Jogos Alfabetização</label>
+                                <ul>
+                                    <li>
+                                        <input id="node-0-12-0" type="checkbox">
+                                        <label>
+                                            <input id="Jogo60" type="checkbox"><span class="k-sprite jogo60"></span>
+                                        </label>
+                                        <label>Complete a palavra - Jogo 60</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-12-1" type="checkbox">
+                                        <label>
+                                            <input id="Jogo61" type="checkbox"><span class="k-sprite jogo61"></span>
+                                        </label>
+                                        <label>Sílaba - Jogo 61</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-12-2" type="checkbox">
+                                        <label>
+                                            <input id="Jogo62" type="checkbox"><span class="k-sprite jogo62"></span>
+                                        </label>
+                                        <label>Soletrar - Jogo 62</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-12-3" type="checkbox">
+                                        <label>
+                                            <input id="Jogo63" type="checkbox"><span class="k-sprite jogo63"></span>
+                                        </label>
+                                        <label>Ouça e escolha - Jogo 63</label>
+                                    </li>
+                                    <li>
+                                        <input id="node-0-12-4" type="checkbox">
+                                        <label>
+                                            <input id="Jogo64" type="checkbox"><span class="k-sprite jogo64"></span>
+                                        </label>
+                                        <label>Ouça e soletre - Jogo 64</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+</body>
+</html>

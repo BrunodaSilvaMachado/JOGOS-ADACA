@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width" name="viewport"/>
+    <title>Configurações</title>
+    <div th:replace="fragments/header :: header-css"/>
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <link href="../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <script src="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header"/>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Configurações</strong>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-sm table-striped table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Som</th>
+                    <th>Musica</th>
+                    <th>Dica por tempo</th>
+                    <th>Dica por caminho</th>
+                    <th>Tipo de dica</th>
+                    <th>Comemoracao</th>
+                    <th>Tempo de dica</th>
+                    <th>Id autista</th>
+                    <th>Id tutor</th>
+                    <th>Id sessão</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="entity : ${entitys}">
+                    <td th:text="${entity.id}"></td>
+                    <td th:text="${entity.som}"></td>
+                    <td th:text="${entity.musica}"></td>
+                    <td th:text="${entity.dicatempo}"></td>
+                    <td th:text="${entity.dicacaminho}"></td>
+                    <td th:text="${entity.tipodica}"></td>
+                    <td th:text="${entity.comemoracao}"></td>
+                    <td th:text="${entity.tempodica}"></td>
+                    <td th:text="${entity.idautista}"></td>
+                    <td th:text="${entity.idtutor}"></td>
+                    <td th:text="${entity.idsessao}"></td>
+                    <td>
+                        <div class="btn-group pull-right">
+                            <a class="btn btn-sm btn-primary"
+                               th:href="@{/Jogos/Configuracoes/edit/{id}(id=${entity.id})}">Editar</a>
+                            <a class="delete btn btn-sm btn-danger"
+                               th:href="@{/Jogos/Configuracoes/delete/{id}(id=${entity.id})}">Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-sm btn-success" th:href="@{/Jogos/Configuracoes/add/}">Adicionar</a>
+    </div>
+</div>
+<div th:replace="fragments/footer :: footer"/>
+</body>
+</html>

@@ -1,0 +1,474 @@
+.divs{
+	position: relative;
+	text-align: center;
+}
+
+#divJogos{
+	/*top:50px;*/
+    /*left:300px;*/
+	width:100%;
+	height:auto;
+	/*background-color: green;*/
+	box-shadow:1px 0px 6px black;
+	overflow: auto;
+}
+
+#labelJogos{
+	margin-left: 130px;
+	font: bold 14px/45px sans-serif;
+
+}
+
+#botaoSessao:hover, #botaoConfigAnterior:hover{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cde5ee+0,edf6f9+100 */
+	background: #cde5ee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cde5ee 0%, #edf6f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cde5ee), color-stop(100%,#edf6f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cde5ee 0%,#edf6f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cde5ee 0%,#edf6f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cde5ee 0%,#edf6f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cde5ee 0%,#edf6f9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cde5ee', endColorstr='#edf6f9',GradientType=0 ); /* IE6-9 */
+}
+
+#divTreeView
+{
+	/*top:200px;*/
+	/*left:400px;*/
+	width:500px;
+	height:500px;
+	margin-top:0px;
+	margin-left: 10px;
+	/*background-color: purple;*/
+	text-align: left;
+}
+
+/* CSS Tree menu styles */
+.acidjs-css3-treeview,
+.acidjs-css3-treeview *
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.acidjs-css3-treeview label[for]::before,
+.acidjs-css3-treeview label span::before
+{
+	content: "\25b6";
+	display: inline-block;
+	margin: 2px 0 0;
+	width: 13px;
+	height: 13px;
+	vertical-align: top;
+	text-align: center;
+	color: #e74c3c;
+	font-size: 8px;  /*Aqui é o tamanho das setas vermelinhas*/
+	line-height: 13px;
+}
+
+.acidjs-css3-treeview li ul
+{
+	margin: 0 20 0 22px;   /*distancia(fica expremido ou distante)*/
+}
+
+.acidjs-css3-treeview *
+{
+	vertical-align: middle;
+}
+
+.acidjs-css3-treeview
+{
+	font: normal 15px/20px "Segoe UI", Arial, Sans-serif;  /*tamanho da letra*/
+}
+
+.acidjs-css3-treeview li
+{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.acidjs-css3-treeview input[type="checkbox"]
+{
+	display: none;
+}
+
+.acidjs-css3-treeview label
+{
+	cursor: pointer;
+}
+
+.acidjs-css3-treeview label[for]::before
+{
+	-webkit-transform: translatex(-24px);
+	-moz-transform: translatex(-24px);
+	-ms-transform: translatex(-24px);  /*distancia da setinha vermelha*/
+	-o-transform: translatex(-24px);
+	transform: translatex(-24px);
+}
+
+.acidjs-css3-treeview label span::before
+{
+	-webkit-transform: translatex(16px);
+	-moz-transform: translatex(16px);
+	-ms-transform: translatex(16px);   /*distancia da checkbox*/
+	-o-transform: translatex(16px);
+	transform: translatex(16px);
+}
+
+.acidjs-css3-treeview input[type="checkbox"][id]:checked ~ label[for]::before
+{
+	content: "\25bc";
+}
+
+.acidjs-css3-treeview input[type="checkbox"][id]:not(:checked) ~ ul
+{
+	display: none;
+}
+
+.acidjs-css3-treeview label:not([for])
+{
+	margin: 0 7px 0 10; /*distancia da setinha vermelha e das letras com relação a checkbox*/
+}
+
+.acidjs-css3-treeview label span::before
+{
+	content: "";
+	border: solid 1px #1375b3; /*aqui é a borda da checkbox*/
+	color: #1375b3;
+	opacity: .50;
+}
+
+.acidjs-css3-treeview label input:checked + span::before
+{
+	content: "\2714";
+	box-shadow: 0 0 2px rgba(0, 0, 0, .25) inset;
+	opacity: 1;
+}
+
+#treeview .k-sprite {
+	/*background-image: url("coloricons-sprite.png");*/
+}
+
+.jogo1 {
+	background-image: url("Jogo_1-Formas%20Sombras/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo2 {
+	background-image: url("Jogo_2-Formas%20Coloridas/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo3 {
+	background-image: url("Jogo_3-Formas%20Azuis/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo4 {
+	background-image: url("Jogo_4-Turma%20da%20Monica2/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo5 {
+	background-image: url("Jogo_5-Bolas/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo6 {
+	background-image: url("Jogo_6-Sorvete/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo7 {
+	background-image: url("Jogo_7-Pirulito/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo8 {
+	background-image: url("Jogo_8-Carrinho/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo9 {
+	background-image: url("Jogo_9-Caminhaozinho/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo10 {
+	background-image: url("Jogo_10-Castelinho/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo11 {
+	background-image: url("Jogo_11-Sombras%20Abstratas/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo12 {
+	background-image: url("Jogo_12-Arvores/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo13 {
+	background-image: url("Jogo_13-Caixas/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo14 {
+	background-image: url("Jogo_14-Frutas%201/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo15 {
+	background-image: url("Jogo_15-Frutas%202/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo16 {
+	background-image: url("Jogo_16-Flor/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo17 {
+	background-image: url("Jogo_17-Turma%20da%20M%C3%B4nica/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo18 {
+	background-image: url("Jogo_18-ABC/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo19 {
+	background-image: url("Jogo_19-EFG/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo20 {
+	background-image: url("Jogo_20-123/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo21 {
+	background-image: url("Jogo_21-456/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo22 {
+	background-image: url("Jogo_22-789/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo23 {
+	background-image: url("Jogo_23-Peixinho/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo24 {
+	background-image: url("Jogo_24-Bob%20Esponja/botao.png");
+	background-size: 15px 16px;
+	background-repeat: no-repeat;
+}
+.jogo25 {
+	background-image: url("Jogo_25-Labirinto/botao.png");
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+}
+.jogo26 {
+	background-image: url("Jogo_26-Rosto/botao_rosto.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo27 {
+	background-image: url("Jogo_27-NumeroBolas/botao_bolas.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo28 {
+	background-image: url("Jogo_28-BolaColorida/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo29 {
+	background-image: url("Jogo_29-MateriaisEscolares/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo30 {
+	background-image: url("Jogo_30-Utensilios/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo31 {
+	background-image: url("Jogo_31-Insetos/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo32 {
+	background-image: url("Jogo_32-Passaro/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo33 {
+	background-image: url("Jogo_33-Passarinhos/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo34 {
+	background-image: url("Jogo_34-Trenzinho/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo35 {
+	background-image: url("Jogo_35-BotoesColoridos/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo36 {
+	background-image: url("Jogo_36-FormasSombras2/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo37 {
+	background-image: url("Jogo_37-SorveteSequencial/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo38 {
+	background-image: url("Jogo_38-BotoesNumeros/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo39 {
+	background-image: url("Jogo_39-BotoesLetras/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+/*Jogo 40. Lince*/
+.jogo40 {
+	background-image: url("JogoBonus-Lince/Botao.png");
+	background-size: 14px 14px;
+}
+.jogo41 {
+	background-image: url("Jogo_41-VariasFormas/Imagens/img1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo42 {
+	background-image: url("Jogo_42-VariasFrutas/J14.pos1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo43 {
+	background-image: url("Jogo_43-SorteveSemNumero/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}/*
+.jogo44 {
+background-image: url("Jogo_44-NumerosParesEImpares(incompleto)/");
+background-size: 14px 14px;
+background-repeat: no-repeat;
+}*/
+.jogo45 {
+	background-image: url("Jogo_45-PeixinhoSequencial/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo46 {
+	background-image: url("Jogo_46-VariasFormasSombras/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo47 {
+	background-image: url("Jogo_47-IdentificarODiferente-Bola/bola1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+/*.jogo48 {
+background-image: url("Jogo_48-BolaColorida-Lvl2(incompleto)/bola1.png");
+background-size: 14px 14px;
+background-repeat: no-repeat;
+}
+.jogo49 {
+background-image: url("Jogo_49-InsetosLvl2(incompleto)/abelha.png");
+background-size: 14px 14px;
+background-repeat: no-repeat;
+}*/
+.jogo50 {
+	background-image: url("Jogo_50-IdentificarODiferente-Arvore/bola1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo51 {
+	background-image: url("Jogo_51-TV/passaro.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo52 {
+	background-image: url("Jogo_52-Colher/bola1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo53 {
+	background-image: url("Jogo_53-PassaroAzul/bola1.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo54 {
+	background-image: url("Jogo_54-IdentificarODiferente-Passaro/botao54.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo55 {
+	background-image: url("Jogo_55-IdentificarODiferente-TdaMonica/botao55.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+
+.jogo56 {
+	background-image: url("Jogo_56-Trenzinho%202/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo57 {
+	background-image: url("Jogo_57-Polvo/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo58 {
+	background-image: url("Jogo_58-AEIOU/botao41.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo59 {
+	background-image: url("Jogo_59-Porco/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo60 {
+	background-image: url("Jogo_60-Alfabetizacao1/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo61 {
+	background-image: url("Jogo_61-Alfabetizacao2/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo62 {
+	background-image: url("Jogo_62-Alfabetizacao3/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo63 {
+	background-image: url("Jogo_63-Alfabetizacao4/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}
+.jogo64 {
+	background-image: url("Jogo_64-Alfabetizacao5/botao.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+}

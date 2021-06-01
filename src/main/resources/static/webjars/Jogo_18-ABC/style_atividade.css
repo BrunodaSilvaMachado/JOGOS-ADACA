@@ -1,0 +1,94 @@
+body{
+    /*background-color: #FFF;*/
+	background: linear-gradient(to bottom, #49bdff 0%, #49bdff 40%, #fbfbfb 40%, #ebebeb 100%);
+	background-repeat: no-repeat;
+}
+
+.image{
+    position: absolute;
+}
+
+#container{
+	margin: 0 auto;
+	background: white;
+	z-index: 0;
+	border: none;
+	position: relative;
+	
+
+
+    width: 820px;
+    height: 720px;
+    border-radius: 50px;
+    
+    overflow: hidden;
+    
+}
+
+
+.dica{
+    background-image: url("dica.png");
+    position: absolute;
+    width: 92px;
+    height: 82px;
+}
+
+.estrela{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+
+.fogos{
+    position: absolute;
+    top: 252px;
+    left: 144px;
+}
+
+#img1{
+    top: 111px;
+    left: 65px;
+    cursor: pointer; 
+}
+
+#img2{
+    top: 281px;
+    left: 65px;
+    cursor: pointer;
+}
+
+#img3{
+    top: 450px;
+    left: 65px;
+    cursor: pointer;
+}
+
+#fundo{
+    top: 112px;
+    left: 340px;
+    z-index: 0;
+}
+
+#target1{
+    top: 283px;
+    left: 343px;
+    z-index: 0;
+}
+
+#target3{
+    top: 114px;
+    left: 343px;
+    z-index: 0;
+}
+
+
+#target2{
+    top: 451px;
+    left: 343px;
+    z-index: 0;
+}
+
+#parabens{
+    top: 260px;
+    left: 50px;
+}

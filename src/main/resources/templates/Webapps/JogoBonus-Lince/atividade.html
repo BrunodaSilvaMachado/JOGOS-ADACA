@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta name="_ctx" th:content="${#httpServletRequest.getContextPath()}">
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <link href="../../static/webjars/JogoBonus-Lince/style_atividade.css" rel='stylesheet' th:href="@{/webjars/JogoBonus-Lince/style_atividade.css}"
+          type="text/css">
+
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}" type="text/javascript"></script>
+    <script src="../../static/js/jquery-ui/jquery-ui.min.js" th:src="@{/js/jquery-ui/jquery-ui.min.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/jquery.ui.touch-punch.min.js" th:src="@{/js/jquery.ui.touch-punch.min.js}"
+            type="text/javascript"></script>
+
+    <script src="../../static/js/adacaWebApi/audioController.js" th:src="@{/js/adacaWebApi/audioController.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/adacaWebApi/saveController.js" th:src="@{/js/adacaWebApi/saveController.js}"
+            type="text/javascript"></script>
+    <script src="../../static/js/adacaWebApi/goBack.js" th:src="@{/js/adacaWebApi/goBack.js}"
+            type="text/javascript"></script>
+    <script src="../../static/webjars/JogoBonus-Lince/js.js" th:src="@{/webjars/JogoBonus-Lince/js.js}"
+            type="text/javascript"></script>
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=0.75, maximum-scale=0.75"/>
+
+</head>
+<body id="budy">
+<div id='container'>
+    <div class='dica' id='dica'></div>
+    <div class='image' id="parabens">
+        <img src="../../static/img/img/parabens.png" th:src="@{/img/img/parabens.png}">
+    </div>
+    <div class='estrela' id="estrela1">
+        <img src="../../static/img/Estrela/estrela1.png" th:src="@{/img/Estrela/estrela1.png}">
+    </div>
+
+    <div class='estrela' id="estrela2">
+        <img src="../../static/img/Estrela/estrela2.png" th:src="@{/img/Estrela/estrela2.png}">
+    </div>
+
+    <div class='estrela' id="estrela3">
+        <img src="../../static/img/Estrela/estrela3.png" th:src="@{/img/Estrela/estrela3.png}">
+    </div>
+
+    <div class='estrela' id="estrela4">
+        <img src="../../static/img/Estrela/estrela4.png" th:src="@{/img/Estrela/estrela4.png}">
+    </div>
+
+    <div class='estrela' id="estrela5">
+        <img src="../../static/img/Estrela/estrela5.png" th:src="@{/img/Estrela/estrela5.png}">
+    </div>
+
+    <div class='estrela' id="estrela6">
+        <img src="../../static/img/Estrela/estrela6.png" th:src="@{/img/Estrela/estrela6.png}">
+    </div>
+
+    <div class='estrela' id="estrela7">
+        <img src="../../static/img/Estrela/estrela7.png" th:src="@{/img/Estrela/estrela7.png}">
+    </div>
+
+    <div class='estrela' id="estrela8">
+        <img src="../../static/img/Estrela/estrela8.png" th:src="@{/img/Estrela/estrela8.png}">
+    </div>
+
+    <div class='estrela' id="estrela9">
+        <img src="../../static/img/Estrela/estrela9.png" th:src="@{/img/Estrela/estrela9.png}">
+    </div>
+
+    <div class='estrela' id="estrela10">
+        <img src="../../static/img/Estrela/estrela10.png" th:src="@{/img/Estrela/estrela10.png}">
+    </div>
+
+    <div class='estrela' id="estrela11">
+        <img src="../../static/img/Estrela/estrela11.png" th:src="@{/img/Estrela/estrela11.png}">
+    </div>
+
+    <div class='estrela' id="estrela12">
+        <img src="../../static/img/Estrela/estrela12.png" th:src="@{/img/Estrela/estrela12.png}">
+    </div>
+
+    <div class='fogos' id="fogos1">
+        <img src="../../static/img/Fogos/fogos1.png" th:src="@{/img/Fogos/fogos1.png}">
+    </div>
+
+    <div class='fogos' id="fogos2">
+        <img src="../../static/img/Fogos/fogos2.png" th:src="@{/img/Fogos/fogos2.png}">
+    </div>
+
+    <div class='fogos' id="fogos3">
+        <img src="../../static/img/Fogos/fogos3.png" th:src="@{/img/Fogos/fogos3.png}">
+    </div>
+
+    <div class='fogos' id="fogos4">
+        <img src="../../static/img/Fogos/fogos4.png" th:src="@{/img/Fogos/fogos4.png}">
+    </div>
+
+    <div class='fogos' id="fogos5">
+        <img src="../../static/img/Fogos/fogos5.png" th:src="@{/img/Fogos/fogos5.png}">
+    </div>
+
+    <div class='fogos' id="fogos6">
+        <img src="../../static/img/Fogos/fogos6.png" th:src="@{/img/Fogos/fogos6.png}">
+    </div>
+
+    <div class='fogos' id="fogos7">
+        <img src="../../static/img/Fogos/fogos7.png" th:src="@{/img/Fogos/fogos7.png}">
+    </div>
+
+    <div class='fogos' id="fogos8">
+        <img src="../../static/img/Fogos/fogos8.png" th:src="@{/img/Fogos/fogos8.png}">
+    </div>
+
+    <div class='image' id="img1">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_1.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_1.png}">
+    </div>
+
+    <div class='image' id="img2">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_2.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_2.png}">
+    </div>
+
+    <div class='image' id="img3">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_3.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_3.png}">
+    </div>
+
+    <div class='image' id="img4">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_4.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_4.png}">
+    </div>
+
+    <div class='image' id="img5">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_5.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_5.png}">
+    </div>
+
+    <div class='image' id="img6">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_6.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_6.png}">
+    </div>
+
+    <div class='image' id="img7">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_7.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_7.png}">
+    </div>
+
+    <div class='image' id="img8">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_8.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_8.png}">
+    </div>
+
+    <div class='image' id="img9">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_9.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_9.png}">
+    </div>
+
+    <div class='image' id="img10">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_10.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_10.png}">
+    </div>
+
+    <div class='image' id="img11">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_11.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_11.png}">
+    </div>
+
+    <div class='image' id="img12">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_12.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_12.png}">
+    </div>
+
+    <div class='image' id="img13">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_13.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_13.png}">
+    </div>
+
+    <div class='image' id="img14">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_14.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_14.png}">
+    </div>
+
+    <div class='image' id="img15">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_15.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_15.png}">
+    </div>
+
+    <div class='image' id="img16">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_16.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_16.png}">
+    </div>
+
+    <div class='image' id="img17">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_17.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_17.png}">
+    </div>
+
+    <div class='image' id="img18">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_18.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_18.png}">
+    </div>
+
+    <div class='image' id="img19">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_19.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_19.png}">
+    </div>
+
+    <div class='image' id="img20">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_20.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_20.png}">
+    </div>
+
+    <div class='image' id="img21">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_21.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_21.png}">
+    </div>
+
+    <div class='image' id="img22">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_22.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_22.png}">
+    </div>
+
+    <div class='image' id="img23">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_23.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_23.png}">
+    </div>
+
+    <div class='image' id="img24">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_24.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_24.png}">
+    </div>
+
+    <div class='image' id="img25">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_25.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_25.png}">
+    </div>
+
+    <div class='image' id="img26">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_26.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_26.png}">
+    </div>
+
+    <div class='image' id="img27">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_27.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_27.png}">
+    </div>
+
+    <div class='image' id="img28">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_28.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_28.png}">
+    </div>
+
+    <div class='image' id="img29">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_29.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_29.png}">
+    </div>
+
+    <div class='image' id="img30">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_30.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_30.png}">
+    </div>
+
+    <div class='image' id="img31">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_31.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_31.png}">
+    </div>
+
+    <div class='image' id="img32">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_32.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_32.png}">
+    </div>
+
+    <div class='image' id="img33">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_33.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_33.png}">
+    </div>
+
+    <div class='image' id="img34">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_34.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_34.png}">
+    </div>
+
+    <div class='image' id="img35">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_35.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_35.png}">
+    </div>
+
+    <div class='image' id="img36">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_36.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_36.png}">
+    </div>
+
+    <div class='image' id="img37">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_37.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_37.png}">
+    </div>
+
+    <div class='image' id="img38">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_38.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_38.png}">
+    </div>
+
+    <div class='image' id="img39">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_39.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_39.png}">
+    </div>
+
+
+    <div class='image' id="target1">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_1.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_1.png}">
+    </div>
+
+    <div class='image' id="target2">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_2.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_2.png}">
+    </div>
+
+    <div class='image' id="target3">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_3.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_3.png}">
+    </div>
+
+    <div class='image' id="target4">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_4.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_4.png}">
+    </div>
+
+    <div class='image' id="target5">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_5.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_5.png}">
+    </div>
+
+    <div class='image' id="target6">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_6.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_6.png}">
+    </div>
+
+    <div class='image' id="target7">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_7.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_7.png}">
+    </div>
+
+    <div class='image' id="target8">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_8.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_8.png}">
+    </div>
+
+    <div class='image' id="target9">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_9.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_9.png}">
+    </div>
+
+    <div class='image' id="target10">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_10.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_10.png}">
+    </div>
+
+    <div class='image' id="target11">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_11.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_11.png}">
+    </div>
+
+    <div class='image' id="target12">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_12.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_12.png}">
+    </div>
+
+    <div class='image' id="target13">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_13.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_13.png}">
+    </div>
+
+    <div class='image' id="target14">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_14.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_14.png}">
+    </div>
+
+    <div class='image' id="target15">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_15.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_15.png}">
+    </div>
+
+    <div class='image' id="target16">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_16.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_16.png}">
+    </div>
+
+    <div class='image' id="target17">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_17.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_17.png}">
+    </div>
+
+    <div class='image' id="target18">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_18.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_18.png}">
+    </div>
+
+    <div class='image' id="target19">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_19.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_19.png}">
+    </div>
+
+    <div class='image' id="target20">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_20.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_20.png}">
+    </div>
+
+    <div class='image' id="target21">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_21.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_21.png}">
+    </div>
+
+    <div class='image' id="target22">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_22.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_22.png}">
+    </div>
+
+    <div class='image' id="target23">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_23.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_23.png}">
+    </div>
+
+    <div class='image' id="target24">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_24.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_24.png}">
+    </div>
+
+    <div class='image' id="target25">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_25.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_25.png}">
+    </div>
+
+    <div class='image' id="target26">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_26.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_26.png}">
+    </div>
+
+    <div class='image' id="target27">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_27.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_27.png}">
+    </div>
+
+    <div class='image' id="target28">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_28.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_28.png}">
+    </div>
+
+    <div class='image' id="target29">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_29.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_29.png}">
+    </div>
+
+    <div class='image' id="target30">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_30.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_30.png}">
+    </div>
+
+    <div class='image' id="target31">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_31.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_31.png}">
+    </div>
+
+    <div class='image' id="target32">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_32.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_32.png}">
+    </div>
+
+    <div class='image' id="target33">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_33.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_33.png}">
+    </div>
+
+    <div class='image' id="target34">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_34.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_34.png}">
+    </div>
+
+    <div class='image' id="target35">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_35.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_35.png}">
+    </div>
+
+    <div class='image' id="target36">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_36.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_36.png}">
+    </div>
+
+    <div class='image' id="target37">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_37.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_37.png}">
+    </div>
+
+    <div class='image' id="target38">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_38.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_38.png}">
+    </div>
+
+    <div class='image' id="target39">
+        <img src="../../static/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_39.png"
+             th:src="@{/webjars/JogoBonus-Lince/Botoes/Botoes_jogo_lince_39.png}">
+    </div>
+
+    <div class='hover' id="hover1">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_1.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHoverBotoesHoverBotoesHover/Botoes_jogo_lince_1.png}"
+             width="80">
+    </div>
+
+    <div class='hover' id="hover2">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_2.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHoverBotoesHover/Botoes_jogo_lince_2.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover3">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_3.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_3.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover4">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_4.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_4.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover5">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_5.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_5.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover6">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_6.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_6.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover7">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_7.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_7.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover8">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_8.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_8.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover9">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_9.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_9.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover10">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_10.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_10.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover11">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_11.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_11.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover12">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_12.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_12.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover13">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_13.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_13.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover14">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_14.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_14.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover15">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_15.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_15.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover16">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_16.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_16.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover17">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_17.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_17.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover18">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_18.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_18.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover19">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_19.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_19.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover20">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_20.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_20.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover21">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_21.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_21.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover22">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_22.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_22.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover23">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_23.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_23.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover24">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_24.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_24.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover25">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_25.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_25.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover26">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_26.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_26.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover27">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_27.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_27.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover28">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_28.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_28.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover29">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_29.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_29.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover30">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_30.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_30.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover31">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_31.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_31.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover32">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_32.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_32.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover33">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_33.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_33.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover34">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_34.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_34.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover35">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_35.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_35.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover36">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_36.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_36.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover37">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_37.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_37.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover38">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_38.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_38.png}" width="80">
+    </div>
+
+    <div class='hover' id="hover39">
+        <img height="80"
+             src="../../static/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_39.png" th:src="@{/webjars/JogoBonus-Lince/BotoesHover/Botoes_jogo_lince_39.png}" width="80">
+    </div>
+
+
+    <div class="image" id="fundo1">
+        <img src="../../static/webjars/JogoBonus-Lince/Campos_Lince/campo_pergunta_sem_botoes.png"
+             th:src="@{/webjars/JogoBonus-Lince/Campos_Lince/campo_pergunta_sem_botoes.png}">
+    </div>
+
+    <div class="image" id="fundo2">
+        <img src="../../static/webjars/JogoBonus-Lince/Campos_Lince/campo_resposta_sem_botoes.png"
+             th:src="@{/webjars/JogoBonus-Lince/Campos_Lince/campo_resposta_sem_botoes.png}">
+    </div>
+
+</div>
+</body>
+</html>
