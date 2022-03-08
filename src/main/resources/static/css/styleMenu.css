@@ -19,7 +19,12 @@ body{
 }
 
 #frame{
-    margin-bottom: 5px;
+    margin: 10px;
+	display: grid;
+	grid-template-areas: "a a a a";
+	row-gap: 120px;
+	column-gap: 20px;
+	grid-auto-columns:auto;
 }
 
 #botao1{
@@ -33,14 +38,18 @@ body{
 	border-radius: 10px 10px 10px 10px;
 	position: absolute;
 	margin: 0px;
-	padding:0px;
+	padding-bottom: 0px;
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao1:hover{
@@ -63,10 +72,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao2:hover{
@@ -89,10 +102,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao3:hover{
@@ -115,10 +132,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao4:hover{
@@ -141,10 +162,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao5:hover{
@@ -167,10 +192,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao6:hover{
@@ -193,10 +222,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao7:hover{
@@ -219,10 +252,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao8:hover{
@@ -245,10 +282,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao9:hover{
@@ -271,10 +312,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao10:hover{
@@ -297,10 +342,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao11:hover{
@@ -324,10 +373,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao12:hover{
@@ -350,10 +403,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao13:hover{
@@ -376,10 +433,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao14:hover{
@@ -402,10 +463,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao15:hover{
@@ -428,10 +493,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao16:hover{
@@ -454,10 +523,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao17:hover{
@@ -480,10 +553,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao18:hover{
@@ -506,10 +583,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao19:hover{
@@ -532,10 +613,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao20:hover{
@@ -558,10 +643,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao21:hover{
@@ -584,10 +673,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao22:hover{
@@ -610,10 +703,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao23:hover{
@@ -637,10 +734,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao24:hover{
@@ -663,10 +764,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao25:hover{
@@ -689,10 +794,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao26:hover{
@@ -715,10 +824,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao27:hover{
@@ -741,10 +854,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao28:hover{
@@ -767,10 +884,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao29:hover{
@@ -793,10 +914,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao30:hover{
@@ -819,10 +944,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao31:hover{
@@ -845,10 +974,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao32:hover{
@@ -871,10 +1004,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao33:hover{
@@ -897,10 +1034,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao34:hover{
@@ -923,10 +1064,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao35:hover{
@@ -949,10 +1094,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao36:hover{
@@ -975,10 +1124,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao37:hover{
@@ -1002,10 +1155,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao38:hover{
@@ -1027,10 +1184,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1054,10 +1215,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 #botao40:hover{
@@ -1080,10 +1245,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1107,10 +1276,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1133,10 +1306,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1160,10 +1337,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1187,10 +1368,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1214,10 +1399,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1241,10 +1430,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1268,10 +1461,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1295,10 +1492,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1322,10 +1523,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1349,10 +1554,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1376,10 +1585,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1403,10 +1616,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1430,10 +1647,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1457,10 +1678,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1483,10 +1708,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1509,10 +1738,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1535,10 +1768,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1561,10 +1798,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1587,10 +1828,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1613,10 +1858,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1639,10 +1888,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1665,10 +1918,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
@@ -1691,10 +1948,14 @@ body{
 	font: bold 12px/24px arial, helvetica, sans-aerif;
 	text-decoration: none;
 	text-align:center;
-	width:100px;
-	height:100px;
+	width:10vw;
+	height:10vw;
 	display:block;
 	visibility: hidden;
+	min-width: 50px;
+	min-height:50px;
+	max-width: 100px;
+	max-height:100px;
 }
 
 
