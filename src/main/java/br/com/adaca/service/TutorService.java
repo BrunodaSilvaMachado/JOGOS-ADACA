@@ -2,7 +2,6 @@ package br.com.adaca.service;
 
 import br.com.adaca.exception.ConflictException;
 import br.com.adaca.exception.NotFoundException;
-import br.com.adaca.model.Administrador;
 import br.com.adaca.model.Role;
 import br.com.adaca.model.Tutor;
 import br.com.adaca.repository.RoleRepository;
@@ -36,10 +35,7 @@ public class TutorService implements UserDetailsService {
      * @return Lista com todos os tutores cadastrados
      */
     public List<Tutor> listar() {
-        List<Tutor> tutores = new ArrayList<>();
-        for (Tutor tutor : tutorRepository.findAll()) {
-            tutores.add(tutor);
-        }
+        List<Tutor> tutores = new ArrayList<>(tutorRepository.findAll());
         if (tutores.isEmpty()) throw new NotFoundException("Nenhum tutor encontrado!");
         return tutores;
     }
