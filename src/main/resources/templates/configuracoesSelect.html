@@ -23,6 +23,7 @@
                         <table class="table table-sm table-striped table-hover table-bordered">
                             <thead>
                             <tr>
+								<th></th>
                                 <th>ID</th>
                                 <th>Som</th>
                                 <th>Musica</th>
@@ -34,11 +35,11 @@
                                 <th>Id autista</th>
                                 <th>Id tutor</th>
                                 <th>Id sessão</th>
-                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr th:each="entity : ${entitys}">
+								<td><input required="true" type="radio" th:value="${entity}" name="query"></td>
                                 <td th:text="${entity.id}"></td>
                                 <td th:text="${entity.som}"></td>
                                 <td th:text="${entity.musica}"></td>
@@ -50,7 +51,6 @@
                                 <td th:text="${entity.idautista}"></td>
                                 <td th:text="${entity.idtutor}"></td>
                                 <td th:text="${entity.idsessao}"></td>
-                                <td><input required="true" type="radio" th:value="${entity}" name="query"></td>
 
                             </tr>
                             </tbody>
