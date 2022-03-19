@@ -12,13 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/Jogos/menu")
 public class MenuController {
     @Autowired
-    private
-    ConfiguracaoService configuracaoService;
+    private ConfiguracaoService configuracaoService;
+    @Autowired
+    private SessaoService sessaoService;
 
     @GetMapping("/all")
     public ModelAndView menuAll(ModelMap model){
         Configuracao configuracao = configuracaoService.selecionar(1);
-        configuracao.setIdsessao(new SessaoService().getLastCurrentSessao());
+        configuracao.setIdsessao(sessaoService.getLastCurrentSessao());
         model.addAttribute("", configuracao.toString());
         return new ModelAndView("redirect:/Jogos/menu/",model);
     }
