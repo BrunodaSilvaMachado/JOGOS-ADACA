@@ -15,7 +15,7 @@
         <strong>Cadastro de Crinaça</strong>
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" method="POST" style="margin: 10px" th:action="@{/Gerenciador/Autistas/save}"
+        <form class="form-horizontal" method="POST" style="margin: 10px" th:action="@{/Jogos/Autistas/save}"
               th:object="${entitys}">
             <div class="form-group">
                 <fieldset>
@@ -172,9 +172,9 @@
                 </fieldset>
             </div>
             <div class="form-group row">
-                <button class="btn btn-sm btn-primary" th:href="@{/Gerenciador/Autistas/list/}" type="submit">Salvar
+                <button class="btn btn-sm btn-primary" th:href="@{/Jogos/Autistas/list/}" type="submit">Salvar
                 </button>
-                <a class="btn btn-sm btn-default" th:href="@{/Gerenciador/Autistas/list/}">Cancelar</a>
+                <a class="btn btn-sm btn-default" th:href="@{/Jogos/Autistas/list/}">Cancelar</a>
             </div>
         </form>
     </div>

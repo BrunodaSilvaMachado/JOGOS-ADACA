@@ -67,9 +67,9 @@
                     <td>
                         <div class="btn-group pull-right">
                             <a class="btn btn-sm btn-primary"
-                               th:href="@{/Gerenciador/Autistas/edit/{id}(id=${entity.id})}">Editar</a>
+                               th:href="@{/Jogos/Autistas/edit/{id}(id=${entity.id})}">Editar</a>
                             <a class="delete btn btn-sm btn-danger"
-                               th:href="@{/Gerenciador/Autistas/delete/{id}(id=${entity.id})}">Excluir</a>
+                               th:href="@{/Jogos/Autistas/delete/{id}(id=${entity.id})}">Excluir</a>
                         </div>
                     </td>
                 </tr>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="panel-footer navbar navbar-inverse navbar-fixed-bottom navbar-light">
-        <a class="btn btn-sm btn-success" th:href="@{/Gerenciador/Autistas/add/}">Adicionar</a>
+        <a class="btn btn-sm btn-success" th:href="@{/Jogos/Autistas/add/}">Adicionar</a>
     </div>
 </div>
 <div th:replace="fragments/footer :: footer"/>

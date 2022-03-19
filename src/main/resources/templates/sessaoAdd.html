@@ -15,7 +15,7 @@
         <strong>Cadastro de Sessões</strong>
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" method="POST" style="margin: 10px" th:action="@{/Gerenciador/Sessoes/save}"
+        <form class="form-horizontal" method="POST" style="margin: 10px" th:action="@{/Jogos/Sessoes/save}"
               th:object="${entitys}">
             <div class="form-group">
                 <fieldset>
@@ -62,9 +62,9 @@
                 </fieldset>
             </div>
             <div class="panel-footer navbar navbar-inverse navbar-fixed-bottom navbar-light">
-                <button class="btn btn-sm btn-primary" th:href="@{/Gerenciador/Sessoes/list/}" type="submit">Salvar
+                <button class="btn btn-sm btn-primary" th:href="@{/Jogos/Sessoes/list/}" type="submit">Salvar
                 </button>
-                <a class="btn btn-sm btn-default" th:href="@{/Gerenciador/Sessoes/list/}">Cancelar</a>
+                <a class="btn btn-sm btn-default" th:href="@{/Jogos/Sessoes/list/}">Cancelar</a>
             </div>
         </form>
     </div>
