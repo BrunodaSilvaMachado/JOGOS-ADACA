@@ -71,7 +71,7 @@ public class Configuracao implements Serializable, BaseId {
                         "&campoEscondidoComemoracao=%s&campoEscondidoSom=%s&campoEscondidoMusicaFundo=%s&campoEscondidoIDSessao=%d",
                 getTipodica(), getDicatempo(), getTempodica(), getDicacaminho(), getComemoracao(), getSom(), getMusica(), getIdsessao().getId());
 
-        urlQuery = "id=" + getId() + "&query=" + campoEscondido + jogoEscondido;
+        urlQuery = "id=" + getId() + "&" + campoEscondido + jogoEscondido;
 
         return urlQuery;
     }
