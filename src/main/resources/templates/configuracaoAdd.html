@@ -18,10 +18,6 @@
     </div>
     <div class="panel-body">
             <form name="configForm" id="configForm" class="form-horizontal" method="POST" style="margin: 10px" th:action="@{/Jogos/Configuracoes/save}" th:object="${entitys}">
-					<div class="form-group row">
-						<button class="btn btn-sm btn-primary" type="submit" id="botaoSessao">Salvar</button>
-						<a class="btn btn-sm btn-default" th:href="@{/Jogos/Configuracoes/list/}">Cancelar</a>
-					</div>
 					<fieldset>
                         <div class="form-group row">
                             <div class="alert alert-danger" th:if="${#fields.hasAnyErrors()}">
@@ -137,10 +133,16 @@
                                 </select>
                             </div>
                         </div>
-                        <div th:insert="configuracaoMenu::configuracaomenu-body">configuracaoMenu::configuracaomenu-body</div>
+                        <div th:insert="configuracaoMenu::configuracaomenu-body">
+                            configuracaoMenu::configuracaomenu-body
+                        </div>
 
                         <input type="hidden" th:field="*{menu}" id="itemMenu">
                     </fieldset>
+                <div class="panel-footer navbar navbar-inverse navbar-fixed-bottom navbar-light">
+                    <button class="btn btn-sm btn-primary" id="botaoSessao" type="submit">Salvar</button>
+                    <a class="btn btn-sm btn-default" th:href="@{/Jogos/Configuracoes/list/}">Cancelar</a>
+                </div>
             </form>
     </div>
 </div>
