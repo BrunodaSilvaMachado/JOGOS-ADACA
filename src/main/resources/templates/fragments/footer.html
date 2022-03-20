@@ -4,10 +4,8 @@
 <head>
 </head>
 <body>
-<div th:fragment="footer" style="position:fixed;bottom:0px;width:100vw;background-color:#FFF">
-
+<div class="panel-footer navbar navbar-inverse navbar-fixed-bottom navbar-light" th:fragment="footer">
     <div class="container">
-
         <footer>
             <!-- this is footer -->
             &copy; 2019 adaca.com.br
@@ -16,10 +14,8 @@
                 Roles: <span sec:authentication="principal.authorities"></span> |
                 <a th:href="@{/Jogos/logout}">Sair</a>
             </span>
-
         </footer>
     </div>
-
 </div>
 </body>
 </html>
