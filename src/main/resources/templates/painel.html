@@ -12,15 +12,18 @@
 <body>
 <div class="panel panel-default">
     <div class="panel-heading">
-        <strong>Sumário</strong>
+        <div class="container">
+            <strong>Sumário</strong>
+        </div>
     </div>
     <div class="panel-body">
-        <a th:href="@{/Jogos/selecionarCrianca}"><p>1 - Selecionar Jogador</p></a>
-        <a th:href="@{/Jogos/Autistas/list}"><p>2 -Cadastro de Crianças</p></a>
-        <a th:href="@{/Jogos/Configuracoes/list}"><p>3 -Configurações</p></a>
-        <a th:href="@{/Jogos/Resultados/list}"><p>4 - Resultados</p></a>
-        <a th:href="@{/Jogos/Sessoes/list}"><p>5- Sessões</p></a>
-
+        <div class="container">
+            <a th:href="@{/Jogos/selecionarCrianca}"><p>1 - Selecionar Jogador</p></a>
+            <a th:href="@{/Jogos/Autistas/list}"><p>2 -Cadastro de Crianças</p></a>
+            <a th:href="@{/Jogos/Configuracoes/list}"><p>3 -Configurações</p></a>
+            <a th:href="@{/Jogos/Resultados/list}"><p>4 - Resultados</p></a>
+            <a th:href="@{/Jogos/Sessoes/list}"><p>5- Sessões</p></a>
+        </div>
     </div>
 </div>
 <div th:replace="fragments/footer :: footer"/>
