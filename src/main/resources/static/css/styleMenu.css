@@ -27,59 +27,38 @@ body{
 	grid-auto-columns:auto;
 }
 
+.botao{
+    background-color: white !important;
+    background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    border-radius: 10px 10px 10px 10px !important;
+    margin: 1rem;
+    padding-bottom: 0px;
+    font: bold 12px/24px arial, helvetica, sans-aerif;
+    text-decoration: none;
+    text-align:center;
+    width:10vw;
+    height:10vw;
+    min-width: 50px;
+    min-height:50px;
+    max-width: 100px;
+    max-height:100px;
+    border-color:black !important;
+}
+
 #botao1{
 	background-image: url('../img/Webapps/Jogo_1-Formas%20Sombras/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding-bottom: 0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao1:hover{
 	background-image: url('../img/Webapps/Jogo_1-Formas%20Sombras/botaosombra.png');
-
 }
 
 #botao2{
 	background-image: url('../img/Webapps/Jogo_2-Formas%20Coloridas/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao2:hover{
@@ -89,27 +68,6 @@ body{
 
 #botao3{
 	background-image: url('../img/Webapps/Jogo_3-Formas%20Azuis/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao3:hover{
@@ -119,27 +77,6 @@ body{
 
 #botao4{
 	background-image: url('../img/Webapps/Jogo_4-Turma%20da%20Monica2/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao4:hover{
@@ -149,27 +86,6 @@ body{
 
 #botao5{
 	background-image: url('../img/Webapps/Jogo_5-Bolas/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao5:hover{
@@ -179,27 +95,6 @@ body{
 
 #botao6{
 	background-image: url('../img/Webapps/Jogo_6-Sorvete/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao6:hover{
@@ -209,27 +104,6 @@ body{
 
 #botao7{
 	background-image: url('../img/Webapps/Jogo_7-Pirulito/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao7:hover{
@@ -239,27 +113,6 @@ body{
 
 #botao8{
 	background-image: url('../img/Webapps/Jogo_8-Carrinho/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao8:hover{
@@ -269,27 +122,6 @@ body{
 
 #botao9{
 	background-image: url('../img/Webapps/Jogo_9-Caminhaozinho/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao9:hover{
@@ -299,27 +131,6 @@ body{
 
 #botao10{
 	background-image: url('../img/Webapps/Jogo_10-Castelinho/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao10:hover{
@@ -329,27 +140,6 @@ body{
 
 #botao11{
 	background-image: url('../img/Webapps/Jogo_11-Sombras%20Abstratas/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao11:hover{
@@ -360,27 +150,6 @@ body{
 
 #botao12{
 	background-image: url('../img/Webapps/Jogo_12-Arvores/botao.png');
-	background-color: white;
-	background-size: 100% 80%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao12:hover{
@@ -390,27 +159,6 @@ body{
 
 #botao13{
 	background-image: url('../img/Webapps/Jogo_13-Caixas/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao13:hover{
@@ -420,27 +168,6 @@ body{
 
 #botao14{
 	background-image: url('../img/Webapps/Jogo_14-Frutas%201/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao14:hover{
@@ -450,27 +177,6 @@ body{
 
 #botao15{
 	background-image: url('../img/Webapps/Jogo_15-Frutas%202/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao15:hover{
@@ -480,27 +186,6 @@ body{
 
 #botao16{
 	background-image: url('../img/Webapps/Jogo_16-Flor/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao16:hover{
@@ -510,27 +195,6 @@ body{
 
 #botao17{
 	background-image: url('../img/Webapps/Jogo_17-Turma%20da%20Monica/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao17:hover{
@@ -540,27 +204,6 @@ body{
 
 #botao18{
 	background-image: url('../img/Webapps/Jogo_18-ABC/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao18:hover{
@@ -570,27 +213,6 @@ body{
 
 #botao19{
 	background-image: url('../img/Webapps/Jogo_19-EFG/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao19:hover{
@@ -600,27 +222,6 @@ body{
 
 #botao20{
 	background-image: url('../img/Webapps/Jogo_20-123/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao20:hover{
@@ -630,27 +231,6 @@ body{
 
 #botao21{
 	background-image: url('../img/Webapps/Jogo_21-456/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao21:hover{
@@ -660,27 +240,6 @@ body{
 
 #botao22{
 	background-image: url('../img/Webapps/Jogo_22-789/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao22:hover{
@@ -690,27 +249,6 @@ body{
 
 #botao23{
 	background-image: url('../img/Webapps/Jogo_23-Peixinho/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao23:hover{
@@ -721,27 +259,6 @@ body{
 
 #botao24{
 	background-image: url('../img/Webapps/Jogo_24-Bob%20Esponja/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao24:hover{
@@ -751,27 +268,6 @@ body{
 
 #botao25{
 	background-image: url('../img/Webapps/Jogo_25-Labirinto/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao25:hover{
@@ -781,27 +277,6 @@ body{
 
 #botao26{
 	background-image: url('../img/Webapps/Jogo_26-Rosto/botao_rosto.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao26:hover{
@@ -811,27 +286,6 @@ body{
 
 #botao27{
 	background-image: url('../img/Webapps/Jogo_27-NumeroBolas/botao_bolas.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao27:hover{
@@ -841,27 +295,6 @@ body{
 
 #botao28{
 	background-image: url('../img/Webapps/Jogo_28-BolaColorida/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao28:hover{
@@ -871,27 +304,6 @@ body{
 
 #botao29{
 	background-image: url('../img/Webapps/Jogo_29-MateriaisEscolares/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao29:hover{
@@ -901,27 +313,6 @@ body{
 
 #botao30{
 	background-image: url('../img/Webapps/Jogo_30-Utensilios/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao30:hover{
@@ -931,27 +322,6 @@ body{
 
 #botao31{
 	background-image: url('../img/Webapps/Jogo_31-Insetos/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao31:hover{
@@ -961,27 +331,6 @@ body{
 
 #botao32{
 	background-image: url('../img/Webapps/Jogo_32-Passaro/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao32:hover{
@@ -991,27 +340,6 @@ body{
 
 #botao33{
 	background-image: url('../img/Webapps/Jogo_33-Passarinhos/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao33:hover{
@@ -1021,27 +349,6 @@ body{
 
 #botao34{
 	background-image: url('../img/Webapps/Jogo_34-Trenzinho/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao34:hover{
@@ -1051,27 +358,6 @@ body{
 
 #botao35{
 	background-image: url('../img/Webapps/Jogo_35-BotoesColoridos/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao35:hover{
@@ -1081,27 +367,6 @@ body{
 
 #botao36{
 	background-image: url('../img/Webapps/Jogo_36-FormasSombras2/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao36:hover{
@@ -1111,27 +376,6 @@ body{
 
 #botao37{
 	background-image: url('../img/Webapps/Jogo_37-SorveteSequencial/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao37:hover{
@@ -1142,27 +386,6 @@ body{
 
 #botao38{
 	background-image: url('../img/Webapps/Jogo_38-BotoesNumeros/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao38:hover{
@@ -1171,27 +394,6 @@ body{
 }
 #botao39{
 	background-image: url('../img/Webapps/Jogo_39-BotoesLetras/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1202,27 +404,6 @@ body{
 /* Jogo 40*/
 #botao40{
 	background-image: url('../img/Webapps/JogoBonus-Lince/Botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 #botao40:hover{
@@ -1232,27 +413,6 @@ body{
 
 #botao41{
 	background-image: url('../img/Webapps/Jogo_41-VariasFormas/botao41.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1263,27 +423,6 @@ body{
 
 #botao42{
 	background-image: url('../img/Webapps/Jogo_42-VariasFrutas/J13.pos3.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1293,27 +432,6 @@ body{
 }
 #botao43{
 	background-image: url('../img/Webapps/Jogo_43-SorteveSemNumero/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1324,27 +442,6 @@ body{
 
 #botao44{
 	background-image: url('../img/Webapps/Jogo_44-NumerosParesEImpares(incompleto)/J17.pos2.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1355,27 +452,6 @@ body{
 
 #botao45{
 	background-image: url('../img/Webapps/Jogo_45-PeixinhoSequencial/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1386,27 +462,6 @@ body{
 
 #botao46{
 	background-image: url('../img/Webapps/Jogo_46-VariasFormasSombras/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1417,27 +472,6 @@ body{
 
 #botao47{
 	background-image: url('../img/Webapps/Jogo_47-IdentificarODiferente-Bola/botao47.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1448,27 +482,6 @@ body{
 
 #botao48{
 	background-image: url('../img/Webapps/Jogo_48-BolaColorida-Lvl2(incompleto)/bola1.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1479,27 +492,6 @@ body{
 
 #botao49{
 	background-image: url('../img/Webapps/Jogo_49-InsetosLvl2(incompleto)/dica.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1510,27 +502,6 @@ body{
 
 #botao50{
 	background-image: url('../img/Webapps/Jogo_50-IdentificarODiferente-Arvore/botao50.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1541,27 +512,6 @@ body{
 
 #botao51{
 	background-image: url('../img/Webapps/Jogo_51-TV/arvore.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1572,27 +522,6 @@ body{
 
 #botao52{
 	background-image: url('../img/Webapps/Jogo_52-Colher/bola2.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1603,27 +532,6 @@ body{
 
 #botao53{
 	background-image: url('../img/Webapps/Jogo_53-PassaroAzul/botao53.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1634,27 +542,6 @@ body{
 
 #botao54{
 	background-image: url('../img/Webapps/Jogo_54-IdentificarODiferente-Passaro/botao54.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1665,27 +552,6 @@ body{
 
 #botao55{
 	background-image: url('../img/Webapps/Jogo_55-IdentificarODiferente-TdaMonica/botao55.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1695,27 +561,6 @@ body{
 
 #botao56{
 	background-image: url('../img/Webapps/Jogo_56-Trenzinho%202/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1725,27 +570,6 @@ body{
 
 #botao57{
 	background-image: url('../img/Webapps/Jogo_57-Polvo/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1755,27 +579,6 @@ body{
 
 #botao58{
 	background-image: url('../img/Webapps/Jogo_58-AEIOU/botao41.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1785,27 +588,6 @@ body{
 
 #botao59{
 	background-image: url('../img/Webapps/Jogo_59-Porco/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1815,27 +597,6 @@ body{
 
 #botao60{
 	background-image: url('../img/Webapps/Jogo_60-Alfabetizacao1/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1845,27 +606,6 @@ body{
 
 #botao61{
 	background-image: url('../img/Webapps/Jogo_61-Alfabetizacao2/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1875,27 +615,6 @@ body{
 
 #botao62{
 	background-image: url('../img/Webapps/Jogo_62-Alfabetizacao3/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1905,27 +624,6 @@ body{
 
 #botao63{
 	background-image: url('../img/Webapps/Jogo_63-Alfabetizacao4/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
@@ -1935,27 +633,6 @@ body{
 
 #botao64{
 	background-image: url('../img/Webapps/Jogo_64-Alfabetizacao5/botao.png');
-	background-color: white;
-	background-size:100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	-khtml-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	border-radius: 10px 10px 10px 10px;
-	position: absolute;
-	margin: 0px;
-	padding:0px;
-	font: bold 12px/24px arial, helvetica, sans-aerif;
-	text-decoration: none;
-	text-align:center;
-	width:10vw;
-	height:10vw;
-	display:block;
-	visibility: hidden;
-	min-width: 50px;
-	min-height:50px;
-	max-width: 100px;
-	max-height:100px;
 }
 
 
