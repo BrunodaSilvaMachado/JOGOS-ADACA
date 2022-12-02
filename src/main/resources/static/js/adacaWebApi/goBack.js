@@ -4,17 +4,17 @@ function goBack(href){
         adaca.dispose();
     }catch(e)
     {
-        var location = urlProtocolHost;
+        var _location = urlProtocolHost;
         var _ctx = $("meta[name='_ctx']").attr("content");
 
         if(_ctx == null){
-            location = location + href;
+            _location = _location + href;
         }
         else{
-            location = location + _ctx + href;
+            _location = _location + _ctx + href;
         }
 
-        console.log('url: ' + location);
-        window.location.replace(location);
+        console.log('url: ' + _location);
+        window.location.replace(_location);
     }
 }
